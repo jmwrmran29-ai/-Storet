@@ -1,0 +1,3647 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050811">
+<meta name="description" content="شام ستور — متجر سوري لشحن شدات ببجي موبايل، جواهر فري فاير، توكنز جواكر، ألعاب الجوال والبي سي، البطاقات الرقمية، وشحن رصيد سيريتل وMTN سوريا عبر محفظة شام كاش بخطوات بسيطة ومباشرة.">
+<meta name="keywords" content="شام ستور, شحن ألعاب, شحن شدات ببجي, PUBG UC, فري فاير, جواكر, كول أوف ديوتي, فالورانت, بطاقات ستيم, جوجل بلاي, شحن رصيد سيريتل, شحن رصيد MTN, شام كاش, سوريا">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:title" content="شام ستور | شحن الألعاب والبطاقات ورصيد سيريتل وMTN عبر شام كاش">
+<meta property="og:description" content="اشحن ألعابك وبطاقاتك ورصيد سيريتل وMTN في سوريا عبر شام كاش بـ 3 خطوات سهلة ومباشرة.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="شام ستور | شحن الألعاب والبطاقات ورصيد سيريتل وMTN عبر شام كاش">
+<meta name="twitter:description" content="متجر شحن الألعاب والبطاقات الرقمية ورصيد سوريا عبر شام كاش.">
+<!-- GOOGLE_SEARCH_CONSOLE_VERIFICATION_SLOT: ضع هنا وسم التحقق من Google Search Console عند الحاجة مثل <meta name="google-site-verification" content="YOUR_CODE_HERE" /> -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Store",
+"name": "شام ستور",
+"description": "متجر شحن الألعاب والبطاقات الرقمية وشحن رصيد سيريتل وMTN في سوريا عبر شام كاش.",
+"inLanguage": "ar",
+"currenciesAccepted": "SYP, USD",
+"paymentAccepted": "Sham Cash",
+"areaServed": {
+"@type": "Country",
+"name": "Syria"
+}
+}
+</script>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="شام ستور">
+<link id="pwa-manifest-link" rel="manifest" href="">
+<link id="apple-touch-icon-link" rel="apple-touch-icon" href="">
+<title>شام ستور | شحن الألعاب والبطاقات ورصيد سيريتل وMTN عبر شام كاش</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+darkMode: 'class',
+theme: {
+extend: {
+fontFamily: {
+sans: ['Cairo', 'sans-serif'],
+mono: ['IBM Plex Mono', 'monospace'],
+},
+colors: {
+navy: {
+950: '#050811',
+900: '#0b1020',
+850: '#10182f',
+800: '#16203d',
+},
+neon: {
+400: '#38bdf8',
+500: '#0ea5e9',
+600: '#0284c7',
+},
+gold: {
+400: '#fbbf24',
+500: '#f59e0b',
+600: '#d97706',
+}
+}
+}
+}
+};
+</script>
+<style>
+* {
+box-sizing: border-box;
+}
+body {
+font-family: 'Cairo', sans-serif;
+background-color: #050811;
+color: #f8fafc;
+overflow-x: hidden;
+}
+.glass-card {
+background: rgba(11, 16, 32, 0.9);
+backdrop-filter: blur(14px);
+-webkit-backdrop-filter: blur(14px);
+border: 1px solid rgba(148, 163, 184, 0.14);
+}
+.hero-glow {
+background: radial-gradient(circle at 82% 18%, rgba(14, 165, 233, 0.18), transparent 48%),
+radial-gradient(circle at 18% 82%, rgba(245, 158, 11, 0.14), transparent 50%);
+}
+.item-card {
+transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.item-card:hover {
+transform: translateY(-3px);
+border-color: rgba(251, 191, 36, 0.45);
+box-shadow: 0 16px 32px -12px rgba(2, 132, 199, 0.22);
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+input[type=number] {
+-moz-appearance: textfield;
+}
+@keyframes fadeSlideUp {
+from {
+opacity: 0;
+transform: translateY(10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+.animate-fade-up {
+animation: fadeSlideUp 0.22s ease-out forwards;
+}
+</style>
+</head>
+<body class="min-h-screen flex flex-col bg-navy-950 text-slate-100 selection:bg-gold-500 selection:text-navy-950">
+
+<!-- إشعارات التنبيه العائمة (Toast) -->
+<div id="toast-container" class="fixed top-5 left-5 z-[120] flex flex-col gap-2.5 max-w-sm w-full pointer-events-none px-3 sm:px-0"></div>
+
+<!-- زر الدعم الفني العائم -->
+<button type="button" id="floating-support-btn" data-action="open-support" aria-label="الدعم الفني"
+class="fixed bottom-5 left-5 z-40 px-4 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:brightness-110 text-navy-950 font-black text-xs sm:text-sm flex items-center gap-2 shadow-xl shadow-emerald-500/25 transition-all cursor-pointer">
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+<path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="13" width="4" height="7" rx="2"/><rect x="18" y="13" width="4" height="7" rx="2"/><path d="M18 20a4 4 0 0 1-4 2h-2"/>
+</svg>
+<span>الدعم الفني</span>
+</button>
+
+<!-- الشريط العلوي للمتجر -->
+<header class="sticky top-0 z-40 glass-card border-b border-slate-800/80">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-16 py-2 flex flex-wrap items-center justify-between gap-2.5">
+<!-- شعار المتجر (5 ضغطات أو Ctrl+Shift+A لفتح نافذة الرمز السري) -->
+<button type="button" id="store-logo-btn" data-action="logo-tap"
+class="flex items-center gap-3 text-right group focus:outline-none select-none cursor-pointer"
+title="شام ستور لشحن الألعاب والرصيد">
+<div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-br from-neon-500 via-indigo-600 to-gold-500 p-[2px] shadow-lg shadow-neon-500/20 group-hover:scale-105 transition-transform">
+<div class="w-full h-full bg-navy-950 rounded-[14px] flex items-center justify-center">
+<svg viewBox="0 0 36 36" class="w-6 h-6" fill="none">
+<path d="M18 4L30 10.5V25.5L18 32L6 25.5V10.5L18 4Z" stroke="#38bdf8" stroke-width="2.4" fill="rgba(56,189,248,0.12)"/>
+<path d="M19.5 10L13.5 19H18.5L16.5 26L23.5 17H18.5L19.5 10Z" fill="#fbbf24"/>
+</svg>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="text-lg sm:text-xl font-black tracking-tight text-white">شام <span class="text-gold-400">ستور</span></span>
+<span class="hidden sm:inline-block text-[11px] font-extrabold px-2 py-0.5 rounded-full bg-neon-500/15 text-neon-400 border border-neon-500/30">شام كاش</span>
+</div>
+<p class="text-[11px] text-slate-400 hidden sm:block">شحن ألعاب وبطاقات ورصيد سيريتل وMTN</p>
+</div>
+</button>
+
+<!-- أزرار الزبائن: تثبيت التطبيق + دليل الشدات + الدعم الفني + العملة + طلباتي -->
+<div class="flex items-center gap-2 flex-wrap">
+<button type="button" id="install-app-top-btn" data-action="open-install-modal"
+class="px-3 py-2 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/40 text-xs sm:text-sm font-black text-emerald-300 flex items-center gap-1.5 transition-all cursor-pointer">
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+<path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/>
+</svg>
+<span id="install-app-btn-label">تثبيت التطبيق</span>
+</button>
+
+<button type="button" id="uc-guide-top-btn" data-action="open-uc-guide"
+class="px-3 py-2 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/40 text-xs sm:text-sm font-black text-gold-400 flex items-center gap-1.5 transition-all cursor-pointer">
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+</svg>
+<span>علمني كيف أشحن الشدات</span>
+</button>
+
+<button type="button" id="support-top-btn" data-action="open-support"
+class="px-3 py-2 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700/80 text-xs sm:text-sm font-extrabold text-emerald-400 flex items-center gap-1.5 transition-all cursor-pointer">
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+<path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="2" y="13" width="4" height="7" rx="2"/><rect x="18" y="13" width="4" height="7" rx="2"/>
+</svg>
+<span>الدعم الفني</span>
+</button>
+
+<button type="button" id="currency-toggle-btn" data-action="toggle-currency"
+class="px-3 py-2 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700/80 text-xs sm:text-sm font-extrabold text-gold-400 flex items-center gap-1.5 transition-all cursor-pointer">
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+<circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2.5 0 0 1 5 0c0 2-5 2-5 4.5a2.5 2.5 0 0 0 5 0"/>
+</svg>
+<span id="currency-toggle-label">ل.س</span>
+</button>
+
+<button type="button" id="my-orders-btn" data-action="open-orders"
+class="px-3.5 py-2 rounded-xl bg-gradient-to-r from-neon-600 to-neon-500 hover:brightness-110 text-white text-xs sm:text-sm font-black flex items-center gap-2 shadow-md shadow-neon-500/20 transition-all cursor-pointer">
+<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+<rect x="6" y="4" width="12" height="16" rx="2"/><path d="M9 9h6M9 13h6M9 17h4"/>
+</svg>
+<span>طلباتي</span>
+<span id="orders-count-badge" class="bg-navy-950/60 text-gold-400 text-[11px] font-mono px-1.5 py-0.5 rounded-md">0</span>
+</button>
+</div>
+</div>
+</header>
+
+<!-- المحتوى الرئيسي -->
+<main class="flex-1">
+<!-- الواجهة الرئيسية للزبائن -->
+<div id="storefront-view" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-7">
+
+<!-- قسم الترحيب وشرح الشحن في 3 خطوات -->
+<section class="glass-card hero-glow rounded-3xl p-5 sm:p-8 border border-slate-800/90 space-y-6">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-5">
+<div class="space-y-2 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-extrabold">
+<span>شحن مباشر ومناسب عبر محفظة شام كاش</span>
+</div>
+<h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight">
+اشحن ألعابك وبطاقاتك ورصيد سوريا <span class="text-gold-400">بخطوات سهلة</span>
+</h1>
+<p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+ببجي، فري فاير، جواكر، كول أوف ديوتي، ألعاب البي سي، بطاقات رقمية، وشحن رصيد سيريتل وMTN سوريا بأسعار واضحة ومباشرة.
+</p>
+<div class="pt-1 flex flex-wrap items-center gap-2.5">
+<button type="button" data-action="open-uc-guide"
+class="px-3.5 py-2 rounded-xl bg-gold-500 hover:bg-gold-400 text-navy-950 text-xs font-black transition-all cursor-pointer">
+دليل شحن الشدات خطوة بخطوة
+</button>
+<button type="button" data-action="open-support"
+class="px-3.5 py-2 rounded-xl bg-navy-900 hover:bg-navy-800 border border-slate-700 text-xs font-bold text-slate-200 transition-all cursor-pointer">
+تواصل مع الدعم الفني
+</button>
+</div>
+</div>
+
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-4 flex flex-col gap-2 shrink-0 min-w-[210px]">
+<div class="flex items-center justify-between lg:flex-col lg:items-start gap-1">
+<span class="text-xs text-slate-400 font-bold">سعر الصرف المعتمد</span>
+<div class="text-base sm:text-lg font-mono font-black text-neon-400" id="hero-rate-display">1$ = 15,000 ل.س</div>
+</div>
+<div class="pt-2 border-t border-slate-800/90 flex items-center justify-between gap-2">
+<span class="text-[11px] text-slate-400 font-bold">الشحن التلقائي:</span>
+<span id="store-auto-status-pill" class="text-[11px] font-black px-2 py-0.5 rounded-full bg-slate-800 text-slate-300">يدوي / قيد المراجعة</span>
+</div>
+</div>
+</div>
+
+<!-- الخطوات الثلاث المبسطة -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 pt-1">
+<div class="bg-navy-950/75 border border-slate-800/90 rounded-2xl p-4 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-gold-500/15 text-gold-400 font-black text-sm flex items-center justify-center shrink-0">1</div>
+<div>
+<h2 class="text-sm font-black text-white">اختر اللعبة أو البطاقة أو الشبكة</h2>
+<p class="text-xs text-slate-400 mt-0.5">حدد الباقة المناسبة أو قيمة الرصيد المطلوبة.</p>
+</div>
+</div>
+<div class="bg-navy-950/75 border border-slate-800/90 rounded-2xl p-4 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-neon-500/15 text-neon-400 font-black text-sm flex items-center justify-center shrink-0">2</div>
+<div>
+<h2 class="text-sm font-black text-white">حوّل عبر شام كاش</h2>
+<p class="text-xs text-slate-400 mt-0.5">امسح الباركود أو انسخ رقم المحفظة وحوّل المبلغ.</p>
+</div>
+</div>
+<div class="bg-navy-950/75 border border-slate-800/90 rounded-2xl p-4 flex items-start gap-3">
+<div class="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-400 font-black text-sm flex items-center justify-center shrink-0">3</div>
+<div>
+<h2 class="text-sm font-black text-white">أدخل الاسم والآيدي ورقم التحويل</h2>
+<p class="text-xs text-slate-400 mt-0.5">اكتب اسمك داخل اللعبة والآيدي بدقة وتابع طلبك من "طلباتي".</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- قسم الشحن التلقائي (Auto Top-Up) للزبون -->
+<section id="store-auto-topup-banner" class="glass-card rounded-3xl p-4 sm:p-5 border border-neon-500/25 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="text-xs font-black px-2.5 py-0.5 rounded-full bg-neon-500/15 text-neon-400 border border-neon-500/30">الشحن التلقائي (Auto Top-Up)</span>
+<span id="store-auto-mode-text" class="text-xs font-bold text-slate-300"></span>
+</div>
+<p id="store-auto-desc-text" class="text-xs text-slate-400 leading-relaxed">
+يمكنك اختيار طلب الشحن التلقائي عند توفر بوابة الربط، أو إرسال طلبك ليتم شحنه يدوياً عبر ميداس باي / الموزع بعد مطابقة الاسم والآيدي وحوالة شام كاش.
+</p>
+</div>
+<button type="button" data-action="quick-open-auto-item"
+class="px-4 py-2.5 rounded-xl bg-neon-500/15 hover:bg-neon-500/25 border border-neon-500/40 text-neon-400 text-xs sm:text-sm font-black shrink-0 transition-all cursor-pointer">
+شحن الآن بالآيدي والاسم
+</button>
+</section>
+
+<!-- شريط التصنيفات والبحث -->
+<section class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+<div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0" id="category-tabs">
+<button type="button" data-category="all"
+class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-gold-500 text-navy-950 shadow-md shadow-gold-500/20">
+الكل
+</button>
+<button type="button" data-category="games"
+class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+ألعاب الجوال والبي سي
+</button>
+<button type="button" data-category="cards"
+class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+بطاقات رقمية
+</button>
+<button type="button" data-category="mobile"
+class="cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+رصيد سوريا
+</button>
+</div>
+
+<div class="relative w-full md:w-72">
+<input type="text" id="store-search-input"
+placeholder="ابحث عن لعبة أو بطاقة أو سيريتل أو MTN..."
+class="w-full bg-navy-900 border border-slate-800 focus:border-neon-500 rounded-xl py-2.5 px-4 text-xs sm:text-sm text-white placeholder-slate-500 outline-none transition-colors">
+</div>
+</section>
+
+<!-- شبكة العناصر -->
+<section>
+<div id="items-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+<div id="empty-items-state" class="hidden glass-card rounded-3xl p-10 text-center space-y-2 mt-4">
+<p class="text-sm font-bold text-slate-300">لا توجد نتائج مطابقة لبحثك أو التصنيف المحدد</p>
+</div>
+</section>
+</div>
+</main>
+
+<!-- تذييل الصفحة -->
+<footer class="border-t border-slate-900 bg-navy-950/90 mt-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+<p>شام ستور — شحن الألعاب والبطاقات وخطوط سيريتل وMTN عبر شام كاش</p>
+<div class="flex items-center gap-4 flex-wrap">
+<button type="button" data-action="open-install-modal" class="text-[11px] text-emerald-400 hover:text-emerald-300 font-bold transition-colors cursor-pointer">
+تثبيت التطبيق
+</button>
+<button type="button" data-action="open-uc-guide" class="text-[11px] text-slate-400 hover:text-gold-400 transition-colors cursor-pointer">
+كيف أشحن الشدات؟
+</button>
+<button type="button" data-action="open-support" class="text-[11px] text-slate-400 hover:text-emerald-400 transition-colors cursor-pointer">
+الدعم الفني
+</button>
+<button type="button" data-action="open-pin-modal" class="text-[11px] text-slate-600 hover:text-slate-400 transition-colors cursor-pointer">
+دخول الإدارة
+</button>
+</div>
+</div>
+</footer>
+
+<!-- نافذة تثبيت التطبيق (PWA) -->
+<div id="install-modal" class="fixed inset-0 z-[55] hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-lg border border-emerald-500/40 p-5 sm:p-6 space-y-4 my-auto animate-fade-up">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-2xl overflow-hidden border border-slate-700 shrink-0">
+<img id="install-modal-icon-img" src="" alt="أيقونة شام ستور" class="w-full h-full object-cover">
+</div>
+<div>
+<h3 class="text-base sm:text-lg font-black text-emerald-300">تثبيت تطبيق شام ستور</h3>
+<p id="install-modal-subtitle" class="text-xs text-slate-400">استخدم المتجر كأيقونة تطبيق مستقلة على جهازك</p>
+</div>
+</div>
+<button type="button" data-action="close-install-modal" aria-label="إغلاق"
+class="p-2 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+
+<div id="install-status-banner" class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3.5 text-xs sm:text-sm text-slate-200 leading-relaxed"></div>
+
+<button type="button" id="trigger-native-install-btn" data-action="trigger-native-install"
+class="hidden w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:brightness-110 text-navy-950 text-sm font-black shadow-lg shadow-emerald-500/20 transition-all cursor-pointer">
+تثبيت التطبيق الآن على الجهاز
+</button>
+
+<div class="space-y-2.5 text-xs text-slate-300 leading-relaxed">
+<div class="bg-navy-950/85 border border-slate-800 rounded-2xl p-3 space-y-1">
+<div class="font-black text-neon-400">أندرويد (Chrome / Edge) أو الكمبيوتر:</div>
+<p>اضغط على زر <span class="text-white font-bold">تثبيت التطبيق الآن</span> إن ظهر، أو افتح قائمة المتصفح (⋮) واختر <span class="text-gold-400 font-bold">تثبيت التطبيق / Add to Home screen</span>.</p>
+</div>
+<div class="bg-navy-950/85 border border-slate-800 rounded-2xl p-3 space-y-1">
+<div class="font-black text-gold-400">آيفون / آيباد (Safari):</div>
+<p>افتح الرابط في متصفح <span class="text-white font-bold">Safari</span>، اضغط على زر <span class="text-white font-bold">المشاركة</span> في الأسفل، ثم اختر <span class="text-gold-400 font-bold">إضافة إلى الشاشة الرئيسية (Add to Home Screen)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- نافذة الشحن الفورية للزبون -->
+<div id="topup-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-xl border border-slate-700/80 p-5 sm:p-6 space-y-5 my-auto animate-fade-up max-h-[92vh] overflow-y-auto">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+<div class="flex items-center gap-3">
+<div id="modal-item-artwork" class="w-11 h-11 rounded-2xl overflow-hidden shrink-0 border border-slate-700"></div>
+<div>
+<h3 id="modal-item-title" class="text-base sm:text-lg font-black text-white"></h3>
+<p id="modal-item-subtitle" class="text-xs text-slate-400"></p>
+</div>
+</div>
+<button type="button" data-action="close-topup-modal" aria-label="إغلاق"
+class="p-2 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+
+<!-- الخطوة 1: اختيار الباقة وطريقة الشحن -->
+<div class="space-y-2.5">
+<div class="flex items-center justify-between">
+<span class="text-xs font-black text-gold-400">1. اختر الباقة المطلوبة</span>
+<span id="modal-currency-badge" class="text-[11px] font-bold text-slate-400"></span>
+</div>
+<div id="modal-packages-list" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5"></div>
+
+<div id="modal-custom-mobile-box" class="hidden bg-navy-950/90 border border-slate-800 rounded-2xl p-3 space-y-2">
+<label for="modal-custom-usd-input" class="block text-xs font-bold text-slate-300">
+أو أدخل قيمة الرصيد المخصص بالدولار ($)
+</label>
+<input type="number" id="modal-custom-usd-input" min="0.5" step="0.5"
+placeholder="مثال: 2 أو 5 أو 10"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2 px-3 text-sm font-mono font-bold text-gold-400 outline-none">
+</div>
+
+<!-- اختيار وضع الشحن التلقائي للزبون -->
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+<div>
+<span class="block text-xs font-black text-neon-400">وضع الشحن التلقائي (Auto Top-Up)</span>
+<span id="modal-auto-topup-hint" class="block text-[11px] text-slate-400"></span>
+</div>
+<label class="inline-flex items-center gap-2 cursor-pointer shrink-0">
+<input type="checkbox" id="modal-auto-topup-checkbox" class="w-4 h-4 accent-neon-500 cursor-pointer">
+<span class="text-xs font-bold text-white">طلب شحن تلقائي</span>
+</label>
+</div>
+</div>
+
+<!-- الخطوة 2: التحويل عبر شام كاش -->
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-4 space-y-3">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<span class="text-xs font-black text-neon-400">2. حوّل المبلغ عبر شام كاش</span>
+<span id="modal-total-price-text" class="text-sm font-black text-gold-400"></span>
+</div>
+
+<div class="flex flex-col sm:flex-row items-center gap-4">
+<div class="w-32 h-32 bg-white rounded-2xl p-2 flex items-center justify-center shrink-0">
+<img id="modal-qr-img" src="" alt="باركود شام كاش" class="hidden w-full h-full object-contain rounded-lg">
+<canvas id="modal-qr-canvas" width="112" height="112" class="w-full h-full object-contain"></canvas>
+</div>
+
+<div class="flex-1 w-full space-y-2 text-center sm:text-right">
+<p id="modal-wallet-label" class="text-xs font-bold text-emerald-400">محفظة شام كاش للتاجر</p>
+<p class="text-xs text-slate-300">امسح الباركود أو انسخ رقم المحفظة وحوّل المبلغ:</p>
+<div class="flex items-center justify-between gap-2 bg-navy-900 border border-slate-700 rounded-xl px-3 py-2">
+<span id="modal-wallet-number" class="text-sm font-mono font-bold text-white select-all" dir="ltr"></span>
+<button type="button" data-action="copy-wallet"
+class="px-2.5 py-1 rounded-lg bg-neon-500/15 hover:bg-neon-500/25 text-neon-400 text-xs font-bold shrink-0 cursor-pointer">
+نسخ
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- الخطوة 3: بيانات الشحن (الاسم + الآيدي/الرقم + رقم التحويل) -->
+<div class="space-y-3">
+<span class="block text-xs font-black text-emerald-400">3. أدخل الاسم داخل اللعبة / الحساب والآيدي ورقم التحويل</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div>
+<label id="modal-account-name-label" for="modal-account-name-input" class="block text-xs font-bold text-slate-300 mb-1">الاسم داخل اللعبة / اسم الحساب</label>
+<input type="text" id="modal-account-name-input" placeholder="مثال: Ahmad_Pro"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3 text-sm text-white outline-none">
+</div>
+<div>
+<label id="modal-target-label" for="modal-target-input" class="block text-xs font-bold text-slate-300 mb-1">الآيدي / رقم الحساب</label>
+<input type="text" id="modal-target-input" placeholder="أدخل الآيدي أو رقم الجوال" dir="ltr"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3 text-sm font-mono text-white text-left outline-none">
+</div>
+<div>
+<label for="modal-tx-input" class="block text-xs font-bold text-slate-300 mb-1">رقم عملية التحويل (شام كاش)</label>
+<input type="text" id="modal-tx-input" placeholder="مثال: TX984512" dir="ltr"
+class="w-full bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2.5 px-3 text-sm font-mono text-white text-left outline-none">
+</div>
+</div>
+</div>
+
+<button type="button" id="submit-topup-order-btn" data-action="submit-order"
+class="w-full py-3 rounded-2xl bg-gradient-to-r from-gold-500 to-amber-500 hover:brightness-110 text-navy-950 text-sm font-black flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20 transition-all cursor-pointer">
+<span>إرسال طلب الشحن وإصدار الإيصال</span>
+</button>
+</div>
+</div>
+
+<!-- نافذة الإيصال الفوري للطلب -->
+<div id="receipt-modal" class="fixed inset-0 z-[65] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-lg border border-emerald-500/40 p-5 sm:p-6 space-y-4 my-auto animate-fade-up">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-xl bg-emerald-500/15 text-emerald-400 font-black flex items-center justify-center text-sm">✓</span>
+<div>
+<h3 class="text-base font-black text-white">إيصال طلب الشحن</h3>
+<p id="receipt-modal-status" class="text-xs text-emerald-400 font-bold"></p>
+</div>
+</div>
+<button type="button" data-action="close-receipt-modal" aria-label="إغلاق الإيصال"
+class="p-2 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-4 space-y-2.5 text-xs sm:text-sm">
+<div class="flex items-center justify-between">
+<span class="text-slate-400">رقم الطلب:</span>
+<span id="receipt-modal-id" class="font-mono font-black text-neon-400"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-400">الخدمة والباقة:</span>
+<span id="receipt-modal-pkg" class="font-bold text-white text-left"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-400">الاسم داخل اللعبة / الحساب:</span>
+<span id="receipt-modal-account-name" class="font-bold text-gold-400"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-400">الآيدي / الرقم:</span>
+<span id="receipt-modal-target" class="font-mono text-white"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-400">رقم التحويل:</span>
+<span id="receipt-modal-tx" class="font-mono text-white"></span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-slate-400">وضع الشحن:</span>
+<span id="receipt-modal-topup-mode" class="font-bold text-neon-400"></span>
+</div>
+<div class="flex items-center justify-between border-t border-slate-800 pt-2">
+<span class="text-slate-400">المبلغ المستحق:</span>
+<span id="receipt-modal-amount" class="font-black text-gold-400"></span>
+</div>
+
+<div class="pt-2 border-t border-slate-800/80 flex items-center justify-between gap-3">
+<div class="space-y-1 text-xs">
+<span id="receipt-modal-wallet-label" class="block font-bold text-emerald-400"></span>
+<span id="receipt-modal-wallet-addr" class="block font-mono text-slate-300" dir="ltr"></span>
+<span id="receipt-modal-time" class="block text-[11px] text-slate-500"></span>
+</div>
+<div class="w-20 h-20 bg-white rounded-xl p-1.5 flex items-center justify-center shrink-0">
+<img id="receipt-modal-qr-img" src="" alt="باركود شام كاش" class="hidden w-full h-full object-contain rounded">
+<canvas id="receipt-modal-qr-canvas" width="68" height="68" class="w-full h-full object-contain"></canvas>
+</div>
+</div>
+</div>
+
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+<button type="button" data-action="copy-receipt-summary"
+class="flex-1 py-2.5 px-4 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-xs sm:text-sm font-bold text-neon-400 cursor-pointer">
+نسخ ملخص الإيصال
+</button>
+<button type="button" data-action="open-orders-from-receipt"
+class="flex-1 py-2.5 px-4 rounded-xl bg-gradient-to-r from-neon-600 to-neon-500 text-white text-xs sm:text-sm font-black cursor-pointer">
+متابعة في طلباتي
+</button>
+</div>
+</div>
+</div>
+
+<!-- نافذة تتبع طلباتي -->
+<div id="orders-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-2xl border border-slate-700/80 p-5 sm:p-6 space-y-4 my-auto animate-fade-up max-h-[88vh] overflow-y-auto">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+<div>
+<h3 class="text-base sm:text-lg font-black text-white">طلباتي</h3>
+<p class="text-xs text-slate-400">متابعة حالة الشحن والاسم داخل اللعبة والآيدي والإيصالات</p>
+</div>
+<button type="button" data-action="close-orders-modal" aria-label="إغلاق"
+class="p-2 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+<div id="customer-orders-list" class="space-y-3"></div>
+</div>
+</div>
+
+<!-- نافذة دليل شحن الشدات (علمني كيف أشحن الشدات) -->
+<div id="uc-guide-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-xl border border-gold-500/40 p-5 sm:p-6 space-y-4 my-auto animate-fade-up max-h-[88vh] overflow-y-auto">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+<div>
+<h3 class="text-base sm:text-lg font-black text-gold-400">علمني كيف أشحن الشدات (UC)</h3>
+<p class="text-xs text-slate-400">خطوات واضحة للزبون وللتاجر عند الشحن عبر ميداس باي أو الموزع</p>
+</div>
+<button type="button" data-action="close-uc-guide" aria-label="إغلاق"
+class="p-2 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+
+<div class="space-y-3 text-xs sm:text-sm text-slate-200 leading-relaxed">
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3.5 space-y-1">
+<div class="font-black text-gold-400">1. جهّز الاسم داخل اللعبة ورقم الـ Player ID</div>
+<p class="text-xs text-slate-300">افتح ببجي موبايل واضغط على صورتك الشخصية في الأعلى؛ ستجد رقم الـ <span class="font-mono text-neon-400">Player ID</span> وتأكّد من كتابة اسم حسابك في اللعبة بدقة لتفادي أي خطأ.</p>
+</div>
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3.5 space-y-1">
+<div class="font-black text-neon-400">2. اختر الباقة وحوّل المبلغ عبر شام كاش</div>
+<p class="text-xs text-slate-300">اختر باقة الشدات المناسبة، انسخ رقم محفظة شام كاش أو امسح الباركود، ثم حوّل المبلغ واحتفظ برقم عملية التحويل.</p>
+</div>
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3.5 space-y-1">
+<div class="font-black text-emerald-400">3. التنفيذ (تلقائي أو عبر ميداس باي / الموزع)</div>
+<p class="text-xs text-slate-300">إذا كان الشحن التلقائي مفعّلاً ومرتبطاً ببوابة مزود معتمد يمكن إرساله تلقائياً، أو يتم تنفيذه يدوياً عبر <span class="text-gold-300 font-bold">Midasbuy</span> أو لوحة الموزع بعد مطابقة الاسم داخل اللعبة والآيدي ووصول الحوالة إلى شام كاش.</p>
+</div>
+</div>
+
+<div class="flex items-center justify-end gap-2.5 pt-1">
+<button type="button" data-action="close-uc-guide"
+class="px-4 py-2.5 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-xs font-bold text-slate-200 cursor-pointer">
+إغلاق
+</button>
+<button type="button" data-action="quick-open-pubg"
+class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 text-navy-950 text-xs font-black cursor-pointer">
+ابدأ شحن الشدات الآن
+</button>
+</div>
+</div>
+</div>
+
+<!-- نافذة الدعم الفني -->
+<div id="support-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-lg border border-emerald-500/40 p-5 sm:p-6 space-y-4 my-auto animate-fade-up">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3.5">
+<div>
+<h3 class="text-base sm:text-lg font-black text-emerald-400">الدعم الفني — شام ستور</h3>
+<p id="support-hours-text" class="text-xs text-slate-400"></p>
+</div>
+<button type="button" data-action="close-support-modal" aria-label="إغلاق"
+class="p-2 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+
+<p id="support-welcome-text" class="text-xs sm:text-sm text-slate-200 bg-navy-950/90 border border-slate-800 rounded-2xl p-3.5 leading-relaxed"></p>
+
+<div class="space-y-2.5 text-xs sm:text-sm">
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+<span class="text-slate-400 font-bold">واتساب:</span>
+<div class="flex items-center gap-2">
+<a id="support-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="font-mono font-bold text-emerald-400 hover:underline" dir="ltr"></a>
+<button type="button" data-action="copy-support-whatsapp" class="px-2.5 py-1 rounded-lg bg-navy-850 hover:bg-navy-800 text-xs text-slate-200 cursor-pointer">نسخ</button>
+</div>
+</div>
+
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+<span class="text-slate-400 font-bold">تيليغرام:</span>
+<div class="flex items-center gap-2">
+<a id="support-telegram-link" href="#" target="_blank" rel="noopener noreferrer" class="font-mono font-bold text-sky-400 hover:underline" dir="ltr"></a>
+<button type="button" data-action="copy-support-telegram" class="px-2.5 py-1 rounded-lg bg-navy-850 hover:bg-navy-800 text-xs text-slate-200 cursor-pointer">نسخ</button>
+</div>
+</div>
+
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+<span class="text-slate-400 font-bold">هاتف:</span>
+<div class="flex items-center gap-2">
+<span id="support-phone-display" class="font-mono font-bold text-white" dir="ltr"></span>
+<button type="button" data-action="copy-support-phone" class="px-2.5 py-1 rounded-lg bg-navy-850 hover:bg-navy-800 text-xs text-slate-200 cursor-pointer">نسخ</button>
+</div>
+</div>
+
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-3 flex items-center justify-between gap-2">
+<span class="text-slate-400 font-bold">البريد:</span>
+<div class="flex items-center gap-2">
+<span id="support-email-display" class="font-mono font-bold text-gold-400" dir="ltr"></span>
+<button type="button" data-action="copy-support-email" class="px-2.5 py-1 rounded-lg bg-navy-850 hover:bg-navy-800 text-xs text-slate-200 cursor-pointer">نسخ</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- نافذة إدخال الرمز السري للإدارة -->
+<div id="pin-modal" class="fixed inset-0 z-[70] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+<div class="glass-card rounded-3xl w-full max-w-sm border border-slate-700/80 p-6 space-y-4 animate-fade-up">
+<div class="flex items-center justify-between">
+<h3 class="text-base font-black text-white">دخول لوحة الإدارة</h3>
+<button type="button" data-action="close-pin-modal" aria-label="إغلاق"
+class="p-1.5 rounded-xl bg-navy-850 hover:bg-navy-800 text-slate-300 cursor-pointer">
+✕
+</button>
+</div>
+<p class="text-xs text-slate-400">أدخل الرمز السري للوصول إلى لوحة التاجر.</p>
+<input type="password" id="admin-pin-input" maxlength="16" dir="ltr" placeholder="••••"
+class="w-full bg-navy-950 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-4 text-center text-lg font-mono tracking-widest text-gold-400 outline-none">
+<button type="button" id="verify-pin-btn" data-action="verify-pin"
+class="w-full py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 hover:brightness-110 text-navy-950 text-sm font-black cursor-pointer">
+دخول
+</button>
+</div>
+</div>
+
+<!-- نافذة لوحة الإدارة الكاملة للتاجر -->
+<div id="admin-modal" class="fixed inset-0 z-[60] hidden items-start justify-center bg-black/80 backdrop-blur-sm p-3 sm:p-6 overflow-y-auto">
+<div class="glass-card rounded-3xl w-full max-w-6xl border border-slate-700/80 p-4 sm:p-7 space-y-6 my-auto animate-fade-up">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+<div>
+<span class="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-gold-500/15 text-gold-400 border border-gold-500/30">لوحة التاجر الخاصة</span>
+<h2 class="text-lg sm:text-2xl font-black text-white mt-1">إدارة الأسعار والأرباح وباركود شام كاش والطلبات</h2>
+</div>
+<div class="flex items-center gap-2 flex-wrap">
+<button type="button" data-action="reset-defaults"
+class="px-3.5 py-2 rounded-xl bg-navy-900 hover:bg-rose-950/60 border border-slate-700 hover:border-rose-500/40 text-xs font-bold text-slate-300 hover:text-rose-300 transition-colors cursor-pointer">
+إعادة الضبط الافتراضي
+</button>
+<button type="button" data-action="close-admin-modal"
+class="px-4 py-2 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-xs sm:text-sm font-black text-white cursor-pointer">
+إغلاق اللوحة
+</button>
+</div>
+</div>
+
+<!-- بطاقات الإحصائيات والأرباح -->
+<div id="admin-stats-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+
+<!-- تبويبات لوحة الإدارة -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 border-b border-slate-800/80">
+<button type="button" data-admin-tab="pricing-qr"
+class="admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-gold-500 text-navy-950">
+سعر الليرة والربح والباركود
+</button>
+<button type="button" data-admin-tab="packages"
+class="admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+الباقات والعروض والعناصر
+</button>
+<button type="button" data-admin-tab="orders"
+class="admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+الطلبات والأرباح
+</button>
+<button type="button" data-admin-tab="auto-topup"
+class="admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+الشحن التلقائي
+</button>
+<button type="button" data-admin-tab="security-support"
+class="admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+كلمة السر والدعم الفني
+</button>
+<button type="button" data-admin-tab="seo-gsc"
+class="admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800">
+SEO و Google Search Console
+</button>
+</div>
+
+<!-- تبويب 1: سعر الليرة والربح وباركود شام كاش -->
+<div id="admin-tab-pricing-qr" class="admin-tab-panel grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-7 bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-4">
+<h3 class="text-sm sm:text-base font-black text-white">سعر صرف الليرة والربح ومحفظة شام كاش</h3>
+
+<div class="bg-navy-900/90 border border-slate-800 rounded-2xl p-4 space-y-2.5">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<label for="admin-rate-input" class="text-xs sm:text-sm font-black text-white">سعر الدولار بالليرة السورية (ل.س)</label>
+<div class="flex items-center gap-1.5">
+<button type="button" data-action="adjust-rate" data-delta="-500" class="px-2.5 py-1 rounded-lg bg-navy-800 hover:bg-navy-700 text-xs font-mono font-bold text-slate-200 cursor-pointer">-500</button>
+<button type="button" data-action="adjust-rate" data-delta="-100" class="px-2.5 py-1 rounded-lg bg-navy-800 hover:bg-navy-700 text-xs font-mono font-bold text-slate-200 cursor-pointer">-100</button>
+<button type="button" data-action="adjust-rate" data-delta="100" class="px-2.5 py-1 rounded-lg bg-navy-800 hover:bg-navy-700 text-xs font-mono font-bold text-gold-400 cursor-pointer">+100</button>
+<button type="button" data-action="adjust-rate" data-delta="500" class="px-2.5 py-1 rounded-lg bg-navy-800 hover:bg-navy-700 text-xs font-mono font-bold text-gold-400 cursor-pointer">+500</button>
+</div>
+</div>
+<input type="number" id="admin-rate-input" min="1" step="1"
+class="w-full bg-navy-950 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-4 text-sm sm:text-base font-mono font-black text-gold-400 outline-none">
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div>
+<label for="admin-profit-pct-input" class="block text-xs font-bold text-slate-300 mb-1">نسبة الربح (%)</label>
+<input type="number" id="admin-profit-pct-input" min="0" max="500" step="0.5"
+class="w-full bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2 px-3 text-sm font-mono font-bold text-emerald-400 outline-none">
+</div>
+<div>
+<label for="admin-fixed-profit-input" class="block text-xs font-bold text-slate-300 mb-1">ربح ثابت إضافي ($)</label>
+<input type="number" id="admin-fixed-profit-input" min="0" max="500" step="0.05"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2 px-3 text-sm font-mono font-bold text-gold-400 outline-none">
+</div>
+<div>
+<label for="admin-wallet-label-input" class="block text-xs font-bold text-slate-300 mb-1">اسم / وصف المحفظة</label>
+<input type="text" id="admin-wallet-label-input" placeholder="شام كاش - التاجر"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2 px-3 text-xs sm:text-sm text-white outline-none">
+</div>
+</div>
+
+<div>
+<label for="admin-wallet-input" class="block text-xs font-bold text-slate-300 mb-1">رقم / عنوان محفظة شام كاش</label>
+<input type="text" id="admin-wallet-input" placeholder="مثال: 9988776655" dir="ltr"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3.5 text-sm font-mono text-white text-left outline-none">
+</div>
+
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+<p id="admin-settings-preview" class="text-xs text-slate-300 font-bold"></p>
+<button type="button" data-action="save-pricing-settings"
+class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black shrink-0 cursor-pointer">
+حفظ وتطبيق الأسعار
+</button>
+</div>
+</div>
+
+<!-- باركود شام كاش للتاجر -->
+<div class="lg:col-span-5 bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-3.5">
+<div class="flex items-center justify-between">
+<h3 class="text-sm sm:text-base font-black text-white">باركود شام كاش للتاجر</h3>
+<span id="admin-qr-status-badge" class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300">تلقائي</span>
+</div>
+
+<div class="bg-navy-900 border border-slate-800 rounded-2xl p-3.5 flex flex-col items-center justify-center gap-2">
+<div class="w-32 h-32 bg-white rounded-2xl p-2 flex items-center justify-center">
+<img id="admin-qr-img" src="" alt="باركود شام كاش" class="hidden w-full h-full object-contain rounded-lg">
+<canvas id="admin-qr-canvas" width="112" height="112" class="w-full h-full object-contain"></canvas>
+</div>
+<p id="admin-qr-info" class="text-[11px] text-slate-400 text-center"></p>
+</div>
+
+<div id="admin-qr-dropzone" tabindex="0"
+class="w-full py-2.5 px-3 rounded-xl bg-navy-900/80 border border-dashed border-slate-700 hover:border-gold-500/70 focus:border-gold-500 text-xs text-slate-300 text-center cursor-pointer transition-colors outline-none">
+اسحب صورة الباركود هنا أو اضغط ثم الصق (Ctrl+V)
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+<button type="button" data-action="trigger-qr-upload"
+class="w-full py-2.5 px-3 rounded-xl bg-neon-500 hover:bg-neon-400 text-navy-950 text-xs font-black cursor-pointer">
+رفع صورة الباركود
+</button>
+<input type="file" id="admin-qr-file-input" accept="image/*" class="hidden">
+
+<button type="button" data-action="paste-qr-clipboard"
+class="w-full py-2.5 px-3 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-gold-400 text-xs font-black cursor-pointer">
+لصق صورة من الحافظة
+</button>
+</div>
+
+<div class="flex items-center gap-2">
+<input type="text" id="admin-qr-url-input" dir="ltr" placeholder="أو رابط صورة الباركود المباشر..."
+class="flex-1 bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2 px-3 text-xs font-mono text-white text-left outline-none">
+<button type="button" data-action="apply-qr-url"
+class="px-3 py-2 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-xs font-bold text-neon-400 shrink-0 cursor-pointer">
+تطبيق الرابط
+</button>
+<button type="button" id="admin-qr-clear-btn" data-action="clear-qr-image"
+class="hidden px-3 py-2 rounded-xl bg-rose-500/15 hover:bg-rose-500 text-rose-400 hover:text-white border border-rose-500/30 text-xs font-bold shrink-0 cursor-pointer">
+إزالة
+</button>
+</div>
+</div>
+</div>
+
+<!-- تبويب 2: إضافة باقات وحذف العروض والباقات والعناصر -->
+<div id="admin-tab-packages" class="admin-tab-panel hidden space-y-5">
+<div class="bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-4">
+<h3 class="text-sm sm:text-base font-black text-white">إضافة باقة جديدة</h3>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+<div>
+<label for="admin-pkg-item-select" class="block text-xs font-bold text-slate-300 mb-1">اختر اللعبة أو البطاقة أو الشبكة</label>
+<select id="admin-pkg-item-select"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-bold text-white outline-none"></select>
+</div>
+<div>
+<label for="admin-pkg-title-input" class="block text-xs font-bold text-slate-300 mb-1">اسم الباقة</label>
+<input type="text" id="admin-pkg-title-input" placeholder="مثال: 1800 شدة UC"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3.5 text-xs sm:text-sm text-white outline-none">
+</div>
+<div>
+<label for="admin-pkg-unit-input" class="block text-xs font-bold text-slate-300 mb-1">الوحدة (اختياري)</label>
+<input type="text" id="admin-pkg-unit-input" placeholder="مثال: 1800 UC"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3.5 text-xs sm:text-sm text-white outline-none">
+</div>
+<div>
+<label for="admin-pkg-cost-usd-input" class="block text-xs font-bold text-slate-300 mb-1">التكلفة بالدولار ($)</label>
+<input type="number" id="admin-pkg-cost-usd-input" min="0.01" step="0.01" placeholder="مثال: 20.00"
+class="w-full bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2.5 px-3.5 text-xs sm:text-sm font-mono font-bold text-white outline-none">
+</div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 items-end">
+<div>
+<label for="admin-pkg-custom-profit-input" class="block text-xs font-bold text-slate-300 mb-1">نسبة ربح مخصصة (%)</label>
+<input type="number" id="admin-pkg-custom-profit-input" min="0" max="500" step="0.5" placeholder="افتراضي من الإعدادات"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3.5 text-xs sm:text-sm font-mono text-white outline-none">
+</div>
+<div>
+<label for="admin-pkg-override-usd-input" class="block text-xs font-bold text-slate-300 mb-1">أو سعر بيع مباشر ($)</label>
+<input type="number" id="admin-pkg-override-usd-input" min="0" step="0.01" placeholder="اختياري"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3.5 text-xs sm:text-sm font-mono text-white outline-none">
+</div>
+<button type="button" data-action="add-package"
+class="w-full py-2.5 px-5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black cursor-pointer">
+إضافة الباقة
+</button>
+</div>
+
+<div id="admin-pkg-calc-preview" class="bg-navy-900/90 border border-slate-800 rounded-2xl px-4 py-2.5 text-xs font-bold text-slate-300"></div>
+</div>
+
+<!-- إضافة عنصر جديد -->
+<div class="bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-4">
+<h3 class="text-sm sm:text-base font-black text-white">إضافة لعبة أو بطاقة أو شبكة جديدة</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+<input type="text" id="admin-new-item-name" placeholder="اسم اللعبة أو الخدمة"
+class="bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm text-white outline-none">
+<select id="admin-new-item-cat"
+class="bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-bold text-white outline-none">
+<option value="games">ألعاب الجوال والبي سي</option>
+<option value="cards">بطاقات رقمية</option>
+<option value="mobile">رصيد سوريا</option>
+</select>
+<input type="text" id="admin-new-item-id-label" placeholder="تسمية الآيدي / الرقم"
+class="bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm text-white outline-none">
+<input type="text" id="admin-new-item-pkg-title" placeholder="اسم الباقة الأولى"
+class="bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm text-white outline-none">
+<input type="number" id="admin-new-item-cost-usd" min="0.01" step="0.01" placeholder="التكلفة ($)"
+class="bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-mono text-white outline-none">
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<button type="button" data-action="trigger-new-item-img"
+class="px-3.5 py-2 rounded-xl bg-navy-900 hover:bg-navy-800 border border-slate-700 text-xs font-bold text-neon-400 cursor-pointer">
+اختيار صورة مخصصة (اختياري)
+</button>
+<input type="file" id="admin-new-item-img-file" accept="image/*" class="hidden">
+<span id="admin-new-item-img-name" class="text-xs text-slate-400">SVG تلقائي</span>
+</div>
+<button type="button" data-action="add-new-item"
+class="px-5 py-2.5 rounded-xl bg-neon-500 hover:bg-neon-400 text-navy-950 text-xs sm:text-sm font-black cursor-pointer">
+إضافة العنصر
+</button>
+</div>
+</div>
+
+<!-- قائمة العناصر والباقات مع إمكانية الإزالة -->
+<div id="admin-items-manager-grid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"></div>
+</div>
+
+<!-- تبويب 3: الطلبات والأرباح -->
+<div id="admin-tab-orders" class="admin-tab-panel hidden space-y-4">
+<div class="bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-3">
+<h3 class="text-sm sm:text-base font-black text-white">إدارة طلبات الزبائن وحساب صافي الربح</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-right border-collapse">
+<thead>
+<tr class="border-b border-slate-800 text-xs text-slate-400">
+<th class="py-3 px-3 font-bold">رقم الطلب</th>
+<th class="py-3 px-3 font-bold">الخدمة والباقة</th>
+<th class="py-3 px-3 font-bold">الاسم داخل اللعبة / الحساب والآيدي</th>
+<th class="py-3 px-3 font-bold">رقم التحويل والوضع</th>
+<th class="py-3 px-3 font-bold">المبلغ والربح</th>
+<th class="py-3 px-3 font-bold">الحالة</th>
+<th class="py-3 px-3 font-bold">إجراء</th>
+</tr>
+</thead>
+<tbody id="admin-orders-tbody" class="divide-y divide-slate-800/70 text-xs sm:text-sm"></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- تبويب 4: الشحن التلقائي (Auto Top-Up) -->
+<div id="admin-tab-auto-topup" class="admin-tab-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-7 bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-4">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div>
+<h3 class="text-sm sm:text-base font-black text-white">إعدادات الشحن التلقائي (Auto Top-Up)</h3>
+<p class="text-xs text-slate-400 mt-0.5">إدارة ربط بوابة الشحن التلقائي أو العمل بالتأكيد اليدوي عبر ميداس باي / الموزع.</p>
+</div>
+<span id="admin-auto-status-badge" class="text-[11px] font-black px-3 py-1 rounded-full bg-slate-800 text-slate-300">معطّل</span>
+</div>
+
+<label class="flex items-center justify-between gap-3 bg-navy-900 border border-slate-800 rounded-2xl p-3.5 cursor-pointer">
+<div>
+<span class="block text-xs sm:text-sm font-black text-white">تفعيل الشحن التلقائي</span>
+<span class="block text-[11px] text-slate-400">إرسال أوامر الشحن تلقائياً عند تأكيد الطلب أو تسجيله حسب الإعداد المختار</span>
+</div>
+<input type="checkbox" id="admin-auto-enabled-toggle" class="w-5 h-5 accent-emerald-500 cursor-pointer">
+</label>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label for="admin-auto-endpoint-input" class="block text-xs font-bold text-slate-300 mb-1">رابط بوابة الشحن / Webhook URL</label>
+<input type="url" id="admin-auto-endpoint-input" dir="ltr" placeholder="https://api.distributor.example/v1/topup"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-mono text-white text-left outline-none">
+</div>
+<div>
+<label for="admin-auto-token-input" class="block text-xs font-bold text-slate-300 mb-1">مفتاح الربط / API Key (مخفي)</label>
+<input type="password" id="admin-auto-token-input" dir="ltr" placeholder="أدخل مفتاح الربط الخاص بك"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-mono text-white text-left outline-none">
+</div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label for="admin-auto-trigger-select" class="block text-xs font-bold text-slate-300 mb-1">توقيت التشغيل التلقائي</label>
+<select id="admin-auto-trigger-select"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-bold text-white outline-none">
+<option value="on_confirm">عند تأكيد الطلب المؤكد يدوياً من التاجر</option>
+<option value="on_create">فور تسجيل الطلب من الزبون</option>
+</select>
+</div>
+<div>
+<label for="admin-auto-fallback-select" class="block text-xs font-bold text-slate-300 mb-1">عند عدم توفر رابط بوابة فعلي</label>
+<select id="admin-auto-fallback-select"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3 text-xs sm:text-sm font-bold text-white outline-none">
+<option value="queue_manual">تحويل للتنفيذ اليدوي (ميداس باي / الموزع)</option>
+<option value="simulate_ready">تسجيل جاهزية الإرسال في السجل</option>
+</select>
+</div>
+</div>
+
+<div class="bg-navy-900/80 border border-slate-800 rounded-2xl p-3 text-[11px] text-slate-300 leading-relaxed">
+<strong class="text-gold-400">ملاحظة تشغيلية:</strong> يتصل الشحن التلقائي بنقطة نهاية (Endpoint / Webhook) خاصة بموزع أو مزود شحن معتمد (يُفضّل تمرير مفاتيح الربط الحساسة عبر خادم وسيط آمن). أما في البداية أو عند الشحن عبر <strong class="text-white">Midasbuy</strong>، فالتأكيد اليدوي يعمل فوراً بعد التأكد من حوالة شام كاش ومطابقة الاسم داخل اللعبة والآيدي.
+</div>
+
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-2.5 pt-1">
+<button type="button" data-action="test-auto-topup"
+class="px-4 py-2.5 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-xs sm:text-sm font-bold text-neon-400 cursor-pointer">
+اختبار / تسجيل أمر تجريبي
+</button>
+<button type="button" data-action="save-auto-topup"
+class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black cursor-pointer">
+حفظ إعدادات الشحن التلقائي
+</button>
+</div>
+</div>
+
+<!-- سجل أوامر الشحن التلقائي -->
+<div class="lg:col-span-5 bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-3">
+<div class="flex items-center justify-between">
+<h3 class="text-sm sm:text-base font-black text-white">سجل أوامر الشحن التلقائي</h3>
+<button type="button" data-action="clear-auto-logs"
+class="px-2.5 py-1 rounded-lg bg-navy-900 hover:bg-rose-500/20 border border-slate-700 text-[11px] font-bold text-slate-300 hover:text-rose-300 cursor-pointer">
+مسح السجل
+</button>
+</div>
+<div id="admin-auto-logs-list" class="space-y-2.5 max-h-80 overflow-y-auto text-xs"></div>
+</div>
+</div>
+
+<!-- تبويب 5: تغيير كلمة السر وإعدادات الدعم الفني -->
+<div id="admin-tab-security-support" class="admin-tab-panel hidden grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- تغيير رمز PIN -->
+<div class="bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-4">
+<h3 class="text-sm sm:text-base font-black text-white">تغيير كلمة السر / رمز الدخول للإدارة</h3>
+<p class="text-xs text-slate-400">الرمز الافتراضي هو <span class="font-mono text-gold-400">2026</span>. يمكنك تغييره وتطبيقه فوراً.</p>
+
+<div class="space-y-3">
+<div>
+<label for="admin-current-pin-input" class="block text-xs font-bold text-slate-300 mb-1">الرمز الحالي</label>
+<input type="password" id="admin-current-pin-input" maxlength="16" dir="ltr" placeholder="الرمز الحالي"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2.5 px-3.5 text-sm font-mono text-white outline-none">
+</div>
+<div>
+<label for="admin-new-pin-input" class="block text-xs font-bold text-slate-300 mb-1">الرمز الجديد (4 خانات فأكثر)</label>
+<input type="password" id="admin-new-pin-input" maxlength="16" dir="ltr" placeholder="الرمز الجديد"
+class="w-full bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2.5 px-3.5 text-sm font-mono text-white outline-none">
+</div>
+<div>
+<label for="admin-confirm-pin-input" class="block text-xs font-bold text-slate-300 mb-1">تأكيد الرمز الجديد</label>
+<input type="password" id="admin-confirm-pin-input" maxlength="16" dir="ltr" placeholder="أعد كتابة الرمز الجديد"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2.5 px-3.5 text-sm font-mono text-white outline-none">
+</div>
+</div>
+
+<button type="button" data-action="change-pin"
+class="w-full py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black cursor-pointer">
+تحديث كلمة السر الآن
+</button>
+</div>
+
+<!-- إعدادات الدعم الفني -->
+<div class="bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-3.5">
+<h3 class="text-sm sm:text-base font-black text-white">إعدادات بيانات الدعم الفني</h3>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<div>
+<label for="admin-support-whatsapp" class="block text-xs font-bold text-slate-300 mb-1">واتساب (WhatsApp)</label>
+<input type="text" id="admin-support-whatsapp" dir="ltr" placeholder="963998877665"
+class="w-full bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2 px-3 text-xs sm:text-sm font-mono text-white text-left outline-none">
+</div>
+<div>
+<label for="admin-support-telegram" class="block text-xs font-bold text-slate-300 mb-1">تيليغرام (Telegram)</label>
+<input type="text" id="admin-support-telegram" dir="ltr" placeholder="shamstore_support"
+class="w-full bg-navy-900 border border-slate-700 focus:border-sky-500 rounded-xl py-2 px-3 text-xs sm:text-sm font-mono text-white text-left outline-none">
+</div>
+<div>
+<label for="admin-support-phone" class="block text-xs font-bold text-slate-300 mb-1">رقم الهاتف</label>
+<input type="text" id="admin-support-phone" dir="ltr" placeholder="0998877665"
+class="w-full bg-navy-900 border border-slate-700 focus:border-gold-500 rounded-xl py-2 px-3 text-xs sm:text-sm font-mono text-white text-left outline-none">
+</div>
+<div>
+<label for="admin-support-email" class="block text-xs font-bold text-slate-300 mb-1">البريد الإلكتروني</label>
+<input type="email" id="admin-support-email" dir="ltr" placeholder="support@shamstore.sy"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2 px-3 text-xs sm:text-sm font-mono text-white text-left outline-none">
+</div>
+</div>
+
+<div>
+<label for="admin-support-hours" class="block text-xs font-bold text-slate-300 mb-1">أوقات العمل</label>
+<input type="text" id="admin-support-hours" placeholder="يومياً من 9 صباحاً حتى 12 منتصف الليل"
+class="w-full bg-navy-900 border border-slate-700 focus:border-neon-500 rounded-xl py-2 px-3 text-xs sm:text-sm text-white outline-none">
+</div>
+
+<div>
+<label for="admin-support-welcome" class="block text-xs font-bold text-slate-300 mb-1">رسالة الترحيب</label>
+<input type="text" id="admin-support-welcome" placeholder="رسالة تظهر للزبائن في نافذة الدعم الفني"
+class="w-full bg-navy-900 border border-slate-700 focus:border-emerald-500 rounded-xl py-2 px-3 text-xs sm:text-sm text-white outline-none">
+</div>
+
+<button type="button" data-action="save-support-settings"
+class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black cursor-pointer">
+حفظ إعدادات الدعم الفني
+</button>
+</div>
+</div>
+
+<!-- تبويب 6: SEO و Google Search Console -->
+<div id="admin-tab-seo-gsc" class="admin-tab-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-7 bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-4">
+<div>
+<h3 class="text-sm sm:text-base font-black text-white">إعدادات الظهور في بحث قوقل (SEO &amp; Google Search Console)</h3>
+<p class="text-xs text-slate-400 mt-1 leading-relaxed">
+تمت إضافة العنوان والوصف والكلمات المفتاحية ووسوم Open Graph وبيانات JSON-LD داخل <code class="font-mono text-neon-400">&lt;head&gt;</code>. عند إثبات ملكية الموقع في Google Search Console، ضع وسم التحقق في المكان المخصص داخل <code class="font-mono text-gold-400">&lt;head&gt;</code> ثم أعد نشر الملف.
+</p>
+</div>
+
+<div class="bg-navy-900/90 border border-slate-800 rounded-2xl p-3.5 space-y-2 text-xs text-slate-300 leading-relaxed">
+<div class="font-black text-gold-400">خطوات ربط الموقع مع Google Search Console:</div>
+<p>1. ارفع <code class="font-mono text-white">index.html</code> على استضافة تدعم <code class="font-mono text-emerald-400">https://</code> (مثل Netlify أو GitHub Pages) واحصل على رابط الموقع المباشر.</p>
+<p>2. افتح <code class="font-mono text-neon-400">search.google.com/search-console</code> وأضف رابط موقعك عبر <code class="font-mono text-white">URL prefix</code>.</p>
+<p>3. انسخ وسم <code class="font-mono text-gold-300">&lt;meta name="google-site-verification" content="..." /&gt;</code> والصقه مكان تعليق <code class="font-mono text-neon-300">GOOGLE_SEARCH_CONSOLE_VERIFICATION_SLOT</code> داخل <code class="font-mono text-white">&lt;head&gt;</code> ثم أعد رفع <code class="font-mono text-white">index.html</code> واضغط <code class="font-mono text-emerald-400">Verify</code>.</p>
+</div>
+
+<div class="space-y-1.5">
+<label for="admin-gsc-slot-marker" class="block text-xs font-bold text-slate-300">علامة المكان المخصص داخل &lt;head&gt;</label>
+<div class="flex items-center gap-2">
+<input type="text" id="admin-gsc-slot-marker" readonly dir="ltr"
+value="GOOGLE_SEARCH_CONSOLE_VERIFICATION_SLOT"
+class="flex-1 bg-navy-900 border border-slate-700 rounded-xl py-2 px-3 text-xs font-mono text-gold-400 text-left outline-none">
+<button type="button" data-action="copy-gsc-slot"
+class="px-3.5 py-2 rounded-xl bg-neon-500/15 hover:bg-neon-500/25 border border-neon-500/40 text-xs font-black text-neon-400 shrink-0 cursor-pointer">
+نسخ العلامة
+</button>
+</div>
+</div>
+</div>
+
+<div class="lg:col-span-5 bg-navy-950/85 border border-slate-800 rounded-3xl p-4 sm:p-5 space-y-3.5">
+<h3 class="text-sm sm:text-base font-black text-white">نموذج وسم التحقق الجاهز للنسخ</h3>
+<p class="text-xs text-slate-400 leading-relaxed">
+استبدل <code class="font-mono text-gold-400">YOUR_CODE_HERE</code> برمز التحقق الفعلي الذي يمنحه لك Google Search Console:
+</p>
+<pre id="admin-gsc-sample-meta" dir="ltr"
+class="bg-navy-900 border border-slate-800 rounded-2xl p-3 text-[11px] font-mono text-emerald-300 overflow-x-auto text-left select-all">&lt;meta name="google-site-verification" content="YOUR_CODE_HERE" /&gt;</pre>
+<button type="button" data-action="copy-gsc-meta"
+class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black cursor-pointer">
+نسخ وسم التحقق النموذجي
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- نافذة تأكيد مخصصة داخل التطبيق -->
+<div id="confirm-modal" class="fixed inset-0 z-[110] hidden items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+<div class="glass-card rounded-3xl w-full max-w-sm border border-rose-500/40 p-5 space-y-4 animate-fade-up">
+<h3 id="confirm-modal-title" class="text-base font-black text-white">تأكيد الإجراء</h3>
+<p id="confirm-modal-message" class="text-xs sm:text-sm text-slate-300 leading-relaxed"></p>
+<div class="flex items-center justify-end gap-2.5 pt-1">
+<button type="button" id="confirm-cancel-btn"
+class="px-4 py-2 rounded-xl bg-navy-850 hover:bg-navy-800 border border-slate-700 text-xs font-bold text-slate-200 cursor-pointer">
+إلغاء
+</button>
+<button type="button" id="confirm-accept-btn"
+class="px-4 py-2 rounded-xl bg-rose-500 hover:bg-rose-400 text-white text-xs font-black cursor-pointer">
+تأكيد الحذف
+</button>
+</div>
+</div>
+</div>
+
+<script>
+(function () {
+'use strict';
+
+const STORAGE_KEY = 'shamstore_v5_state';
+const DEFAULT_PIN = '2026';
+
+function createDefaultState() {
+return {
+settings: {
+exchangeRateSyp: 15000,
+profitPercent: 15,
+fixedProfitUsd: 0,
+currency: 'SYP',
+walletLabel: 'محفظة شام كاش الرسمية',
+shamCashWallet: '9988776655',
+merchantQrImage: '',
+adminPin: DEFAULT_PIN,
+autoTopup: {
+enabled: false,
+endpointUrl: '',
+apiToken: '',
+triggerMode: 'on_confirm',
+fallbackMode: 'queue_manual'
+},
+support: {
+whatsapp: '963998877665',
+telegram: 'shamstore_support',
+phone: '0998877665',
+email: 'support@shamstore.sy',
+hours: 'يومياً من 9:00 صباحاً حتى 12:00 منتصف الليل',
+welcomeMessage: 'أهلاً بك في الدعم الفني لمتجر شام ستور. تواصل معنا مع ذكر رقم الطلب وسنساعدك بأسرع وقت.'
+}
+},
+items: [
+{
+id: 'pubg-mobile',
+name: 'ببجي موبايل (PUBG UC)',
+category: 'games',
+badge: 'شحن بالآيدي',
+accountNameLabel: 'الاسم داخل اللعبة (In-Game Name)',
+accountNamePlaceholder: 'مثال: Ahmad_Syria',
+targetLabel: 'رقم اللاعب (Player ID)',
+targetPlaceholder: 'مثال: 5123456789',
+artworkType: 'pubg',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'pubg-60', name: '60 شدة UC', unit: '60 UC', costUsd: 0.90 },
+{ id: 'pubg-325', name: '325 شدة UC', unit: '325 UC', costUsd: 4.40 },
+{ id: 'pubg-660', name: '660 شدة UC', unit: '660 UC', costUsd: 8.60 },
+{ id: 'pubg-1800', name: '1800 شدة UC', unit: '1800 UC', costUsd: 22.50 }
+]
+},
+{
+id: 'free-fire',
+name: 'فري فاير (Free Fire)',
+category: 'games',
+badge: 'جواهر فورية',
+accountNameLabel: 'الاسم داخل اللعبة (In-Game Name)',
+accountNamePlaceholder: 'مثال: FireKing',
+targetLabel: 'آيدي الحساب (UID)',
+targetPlaceholder: 'مثال: 184920381',
+artworkType: 'freefire',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'ff-110', name: '110 جوهرة', unit: '110 Diamonds', costUsd: 0.95 },
+{ id: 'ff-341', name: '341 جوهرة', unit: '341 Diamonds', costUsd: 2.80 },
+{ id: 'ff-572', name: '572 جوهرة', unit: '572 Diamonds', costUsd: 4.60 },
+{ id: 'ff-1166', name: '1166 جوهرة', unit: '1166 Diamonds', costUsd: 9.20 }
+]
+},
+{
+id: 'jawaker',
+name: 'جواكر (Jawaker)',
+category: 'games',
+badge: 'توكنز',
+accountNameLabel: 'الاسم داخل اللعبة / اسم الحساب',
+accountNamePlaceholder: 'مثال: AbuTariq',
+targetLabel: 'آيدي أو بريد جواكر',
+targetPlaceholder: 'مثال: 7741290',
+artworkType: 'jawaker',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'jwk-125k', name: '125,000 توكن', unit: '125K Tokens', costUsd: 2.60 },
+{ id: 'jwk-350k', name: '350,000 توكن', unit: '350K Tokens', costUsd: 6.90 },
+{ id: 'jwk-800k', name: '800,000 توكن', unit: '800K Tokens', costUsd: 15.00 }
+]
+},
+{
+id: 'cod-mobile',
+name: 'كول أوف ديوتي موبايل',
+category: 'games',
+badge: 'نقاط CP',
+accountNameLabel: 'الاسم داخل اللعبة (In-Game Name)',
+accountNamePlaceholder: 'مثال: Ghost_Hama',
+targetLabel: 'آيدي اللاعب (Player ID)',
+targetPlaceholder: 'أدخل رقم اللاعب في CODM',
+artworkType: 'codm',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'cod-80', name: '80 نقطة CP', unit: '80 CP', costUsd: 1.00 },
+{ id: 'cod-420', name: '420 نقطة CP', unit: '420 CP', costUsd: 4.90 },
+{ id: 'cod-880', name: '880 نقطة CP', unit: '880 CP', costUsd: 9.80 }
+]
+},
+{
+id: 'valorant-pc',
+name: 'فالورانت بي سي (Valorant VP)',
+category: 'games',
+badge: 'ألعاب البي سي',
+accountNameLabel: 'الاسم داخل اللعبة / اسم الحساب',
+accountNamePlaceholder: 'مثال: AimBot',
+targetLabel: 'Riot ID (Name#Tag)',
+targetPlaceholder: 'مثال: Player#ME1',
+artworkType: 'valorant',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'val-475', name: '475 VP', unit: '475 VP', costUsd: 4.80 },
+{ id: 'val-1000', name: '1000 VP', unit: '1000 VP', costUsd: 9.60 },
+{ id: 'val-2050', name: '2050 VP', unit: '2050 VP', costUsd: 19.20 }
+]
+},
+{
+id: 'steam-wallet',
+name: 'بطاقات ستيم (Steam PC)',
+category: 'cards',
+badge: 'بطاقات رقمية',
+accountNameLabel: 'اسم الحساب / المستلم',
+accountNamePlaceholder: 'اسم حساب ستيم',
+targetLabel: 'البريد الإلكتروني أو اسم الحساب',
+targetPlaceholder: 'name@example.com',
+artworkType: 'steam',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'stm-5', name: 'بطاقة ستيم 5$', unit: '$5 Steam', costUsd: 5.30 },
+{ id: 'stm-10', name: 'بطاقة ستيم 10$', unit: '$10 Steam', costUsd: 10.50 },
+{ id: 'stm-20', name: 'بطاقة ستيم 20$', unit: '$20 Steam', costUsd: 20.80 }
+]
+},
+{
+id: 'google-play',
+name: 'بطاقات جوجل بلاي',
+category: 'cards',
+badge: 'بطاقات رقمية',
+accountNameLabel: 'اسم الحساب / المستلم',
+accountNamePlaceholder: 'اسم صاحب الحساب',
+targetLabel: 'البريد الإلكتروني لحساب جوجل',
+targetPlaceholder: 'user@gmail.com',
+artworkType: 'gplay',
+customImage: '',
+isMobileTopup: false,
+packages: [
+{ id: 'gp-5', name: 'بطاقة جوجل بلاي 5$', unit: '$5 Card', costUsd: 5.25 },
+{ id: 'gp-10', name: 'بطاقة جوجل بلاي 10$', unit: '$10 Card', costUsd: 10.40 },
+{ id: 'gp-25', name: 'بطاقة جوجل بلاي 25$', unit: '$25 Card', costUsd: 25.75 }
+]
+},
+{
+id: 'syriatel',
+name: 'رصيد سيريتل (Syriatel)',
+category: 'mobile',
+badge: 'رصيد سوريا',
+accountNameLabel: 'اسم الحساب / صاحب الخط (اختياري)',
+accountNamePlaceholder: 'اسم صاحب الرقم',
+targetLabel: 'رقم خط سيريتل (093 / 099)',
+targetPlaceholder: '093xxxxxxx',
+artworkType: 'syriatel',
+customImage: '',
+isMobileTopup: true,
+packages: [
+{ id: 'syr-1', name: 'رصيد 1$', unit: '1 USD Credit', costUsd: 1.05 },
+{ id: 'syr-2', name: 'رصيد 2$', unit: '2 USD Credit', costUsd: 2.10 },
+{ id: 'syr-5', name: 'رصيد 5$', unit: '5 USD Credit', costUsd: 5.20 },
+{ id: 'syr-10', name: 'رصيد 10$', unit: '10 USD Credit', costUsd: 10.30 }
+]
+},
+{
+id: 'mtn-syria',
+name: 'رصيد MTN سوريا',
+category: 'mobile',
+badge: 'رصيد سوريا',
+accountNameLabel: 'اسم الحساب / صاحب الخط (اختياري)',
+accountNamePlaceholder: 'اسم صاحب الرقم',
+targetLabel: 'رقم خط MTN (094 / 095 / 096)',
+targetPlaceholder: '094xxxxxxx',
+artworkType: 'mtn',
+customImage: '',
+isMobileTopup: true,
+packages: [
+{ id: 'mtn-1', name: 'رصيد 1$', unit: '1 USD Credit', costUsd: 1.05 },
+{ id: 'mtn-2', name: 'رصيد 2$', unit: '2 USD Credit', costUsd: 2.10 },
+{ id: 'mtn-5', name: 'رصيد 5$', unit: '5 USD Credit', costUsd: 5.20 },
+{ id: 'mtn-10', name: 'رصيد 10$', unit: '10 USD Credit', costUsd: 10.30 }
+]
+}
+],
+orders: [],
+autoTopupLogs: []
+};
+}
+
+let appState = loadAppState();
+let activeCategory = 'all';
+let activeAdminTab = 'pricing-qr';
+let activeModalItemId = null;
+let selectedPackageId = null;
+let customMobileCostUsd = null;
+let lastReceiptOrder = null;
+let logoTapCount = 0;
+let logoTapTimer = null;
+let pendingNewItemImage = '';
+let confirmCallback = null;
+let deferredInstallPrompt = null;
+let generatedAppIcon192 = '';
+let generatedAppIcon512 = '';
+let activeManifestUrl = '';
+
+/* =====================================================================
+دوال الأمان والتخزين المحلي والإشعارات
+===================================================================== */
+function escapeHtml(value) {
+return String(value === undefined || value === null ? '' : value)
+.replace(/&/g, '&amp;')
+.replace(/</g, '&lt;')
+.replace(/>/g, '&gt;')
+.replace(/"/g, '&quot;')
+.replace(/'/g, '&#39;');
+}
+
+function showToast(message, type) {
+try {
+const container = document.getElementById('toast-container');
+if (!container) return;
+const toast = document.createElement('div');
+const palette = type === 'error'
+? 'bg-rose-950/95 border-rose-500/60 text-rose-200'
+: (type === 'info'
+? 'bg-navy-900/95 border-neon-500/60 text-sky-200'
+: 'bg-emerald-950/95 border-emerald-500/60 text-emerald-200');
+toast.className = `pointer-events-auto border rounded-2xl px-4 py-3 text-xs sm:text-sm font-bold shadow-2xl animate-fade-up ${palette}`;
+toast.textContent = String(message || '');
+container.appendChild(toast);
+setTimeout(() => {
+toast.style.opacity = '0';
+toast.style.transition = 'opacity 0.2s ease';
+setTimeout(() => {
+if (toast.parentNode) toast.parentNode.removeChild(toast);
+}, 220);
+}, 3200);
+} catch (e) {}
+}
+
+function loadAppState() {
+const fallback = createDefaultState();
+try {
+const raw = localStorage.getItem(STORAGE_KEY);
+if (!raw) return fallback;
+const parsed = JSON.parse(raw);
+if (!parsed || typeof parsed !== 'object') return fallback;
+
+const mergedSettings = Object.assign({}, fallback.settings, parsed.settings || {});
+mergedSettings.autoTopup = Object.assign({}, fallback.settings.autoTopup, (parsed.settings && parsed.settings.autoTopup) || {});
+mergedSettings.support = Object.assign({}, fallback.settings.support, (parsed.settings && parsed.settings.support) || {});
+
+const items = Array.isArray(parsed.items) && parsed.items.length > 0 ? parsed.items : fallback.items;
+const orders = Array.isArray(parsed.orders) ? parsed.orders : [];
+const autoTopupLogs = Array.isArray(parsed.autoTopupLogs) ? parsed.autoTopupLogs : [];
+
+return {
+settings: mergedSettings,
+items,
+orders,
+autoTopupLogs
+};
+} catch (e) {
+return fallback;
+}
+}
+
+function saveAppState() {
+try {
+localStorage.setItem(STORAGE_KEY, JSON.stringify(appState));
+return true;
+} catch (e) {
+showToast('تعذر حفظ التغييرات في التخزين المحلي للمتصفح', 'error');
+return false;
+}
+}
+
+function openConfirmDialog(title, message, onAccept) {
+confirmCallback = typeof onAccept === 'function' ? onAccept : null;
+const titleEl = document.getElementById('confirm-modal-title');
+const msgEl = document.getElementById('confirm-modal-message');
+const modal = document.getElementById('confirm-modal');
+if (titleEl) titleEl.textContent = title || 'تأكيد الإجراء';
+if (msgEl) msgEl.textContent = message || '';
+if (modal) {
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+}
+
+function closeConfirmDialog() {
+confirmCallback = null;
+const modal = document.getElementById('confirm-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+/* =====================================================================
+دعم PWA الكامل (Manifest + Icons + Service Worker عبر Blob)
+===================================================================== */
+function buildPwaIconDataUrl(size) {
+try {
+const px = size || 192;
+const canvas = document.createElement('canvas');
+canvas.width = px;
+canvas.height = px;
+const ctx = canvas.getContext('2d');
+if (!ctx) return '';
+
+const grad = ctx.createLinearGradient(0, 0, px, px);
+grad.addColorStop(0, '#0b1020');
+grad.addColorStop(0.55, '#0f172a');
+grad.addColorStop(1, '#1e1b4b');
+ctx.fillStyle = grad;
+ctx.fillRect(0, 0, px, px);
+
+const pad = Math.round(px * 0.14);
+const r = Math.round(px * 0.22);
+ctx.strokeStyle = '#38bdf8';
+ctx.lineWidth = Math.max(3, Math.round(px * 0.025));
+ctx.beginPath();
+ctx.roundRect(pad, pad, px - pad * 2, px - pad * 2, r);
+ctx.stroke();
+
+const cx = px / 2;
+const cy = px / 2;
+const s = px * 0.24;
+ctx.fillStyle = '#fbbf24';
+ctx.beginPath();
+ctx.moveTo(cx + s * 0.18, cy - s);
+ctx.lineTo(cx - s * 0.65, cy + s * 0.08);
+ctx.lineTo(cx + s * 0.04, cy + s * 0.08);
+ctx.lineTo(cx - s * 0.18, cy + s);
+ctx.lineTo(cx + s * 0.65, cy - s * 0.08);
+ctx.lineTo(cx - s * 0.04, cy - s * 0.08);
+ctx.closePath();
+ctx.fill();
+
+return canvas.toDataURL('image/png');
+} catch (err) {
+return '';
+}
+}
+
+function setupPwaManifestAndIcons() {
+try {
+generatedAppIcon192 = buildPwaIconDataUrl(192);
+generatedAppIcon512 = buildPwaIconDataUrl(512);
+
+const appleIcon = document.getElementById('apple-touch-icon-link');
+if (appleIcon && generatedAppIcon192) {
+appleIcon.href = generatedAppIcon192;
+}
+
+const modalIconImg = document.getElementById('install-modal-icon-img');
+if (modalIconImg && (generatedAppIcon192 || generatedAppIcon512)) {
+modalIconImg.src = generatedAppIcon192 || generatedAppIcon512;
+}
+
+if (window.location.protocol === 'file:') {
+return;
+}
+
+const icons = [];
+if (generatedAppIcon192) {
+icons.push({ src: generatedAppIcon192, sizes: '192x192', type: 'image/png', purpose: 'any maskable' });
+}
+if (generatedAppIcon512) {
+icons.push({ src: generatedAppIcon512, sizes: '512x512', type: 'image/png', purpose: 'any maskable' });
+}
+
+const manifestObj = {
+name: 'شام ستور — شحن الألعاب والبطاقات ورصيد سوريا',
+short_name: 'شام ستور',
+description: 'شحن شدات ببجي، جواهر فري فاير، توكنز جواكر، ألعاب الجوال والبي سي، بطاقات رقمية، ورصيد سيريتل وMTN عبر شام كاش.',
+lang: 'ar',
+dir: 'rtl',
+start_url: './',
+scope: './',
+display: 'standalone',
+orientation: 'portrait-primary',
+background_color: '#050811',
+theme_color: '#050811',
+icons
+};
+
+const manifestBlob = new Blob([JSON.stringify(manifestObj)], { type: 'application/manifest+json' });
+if (activeManifestUrl) {
+try { URL.revokeObjectURL(activeManifestUrl); } catch (e) {}
+}
+activeManifestUrl = URL.createObjectURL(manifestBlob);
+
+const linkEl = document.getElementById('pwa-manifest-link');
+if (linkEl) {
+linkEl.href = activeManifestUrl;
+}
+} catch (err) {
+console.warn('تعذر إعداد Manifest التطبيق:', err);
+}
+}
+
+function registerPwaServiceWorker() {
+try {
+if (!('serviceWorker' in navigator)) return;
+if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+return;
+}
+
+const swCode = `
+const CACHE_NAME = 'shamstore-pwa-v1';
+self.addEventListener('install', (event) => {
+self.skipWaiting();
+event.waitUntil(
+caches.open(CACHE_NAME).then((cache) => {
+const url = self.registration && self.registration.scope ? self.registration.scope : './';
+return cache.add(new Request(url, { cache: 'reload' })).catch(() => {});
+})
+);
+});
+self.addEventListener('activate', (event) => {
+event.waitUntil(
+caches.keys().then((keys) => Promise.all(
+keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
+)).then(() => self.clients.claim())
+);
+});
+self.addEventListener('fetch', (event) => {
+if (event.request.method !== 'GET') return;
+const reqUrl = new URL(event.request.url);
+if (reqUrl.origin !== self.location.origin) return;
+event.respondWith(
+caches.match(event.request).then((cached) => {
+if (cached) {
+fetch(event.request).then((fresh) => {
+if (fresh && fresh.ok) {
+caches.open(CACHE_NAME).then((c) => c.put(event.request, fresh)).catch(() => {});
+}
+}).catch(() => {});
+return cached;
+}
+return fetch(event.request).then((res) => {
+if (res && res.ok) {
+const copy = res.clone();
+caches.open(CACHE_NAME).then((c) => c.put(event.request, copy)).catch(() => {});
+}
+return res;
+}).catch(() => caches.match('./'));
+})
+);
+});
+`;
+
+const swBlob = new Blob([swCode], { type: 'application/javascript' });
+const swUrl = URL.createObjectURL(swBlob);
+navigator.serviceWorker.register(swUrl).then(() => {
+setTimeout(() => {
+try { URL.revokeObjectURL(swUrl); } catch (e) {}
+}, 10000);
+}).catch((err) => {
+console.warn('تعذر تسجيل Service Worker:', err);
+});
+} catch (err) {
+console.warn('خطأ في تهيئة Service Worker:', err);
+}
+}
+
+function isRunningAsStandalonePwa() {
+return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+Boolean(window.navigator && window.navigator.standalone);
+}
+
+function updateInstallUiState() {
+const btnLabel = document.getElementById('install-app-btn-label');
+const nativeBtn = document.getElementById('trigger-native-install-btn');
+const banner = document.getElementById('install-status-banner');
+const subtitle = document.getElementById('install-modal-subtitle');
+
+if (isRunningAsStandalonePwa()) {
+if (btnLabel) btnLabel.textContent = 'مثبّت كتطبيق';
+if (nativeBtn) nativeBtn.classList.add('hidden');
+if (subtitle) subtitle.textContent = 'أنت تستخدم شام ستور الآن في وضع التطبيق المستقل';
+if (banner) {
+banner.className = 'bg-emerald-950/60 border border-emerald-500/40 rounded-2xl p-3.5 text-xs sm:text-sm text-emerald-200 leading-relaxed';
+banner.textContent = 'التطبيق مثبّت ويعمل بالفعل على جهازك ضمن نافذة مستقلة.';
+}
+return;
+}
+
+if (btnLabel) btnLabel.textContent = 'تثبيت التطبيق';
+
+if (deferredInstallPrompt) {
+if (nativeBtn) nativeBtn.classList.remove('hidden');
+if (subtitle) subtitle.textContent = 'جاهز للتثبيت المباشر بنقرة واحدة';
+if (banner) {
+banner.className = 'bg-emerald-950/50 border border-emerald-500/30 rounded-2xl p-3.5 text-xs sm:text-sm text-emerald-100 leading-relaxed';
+banner.textContent = 'متصفحك يدعم التثبيت المباشر الآن. اضغط على زر "تثبيت التطبيق الآن على الجهاز" لإضافة أيقونة شام ستور.';
+}
+} else {
+if (nativeBtn) nativeBtn.classList.add('hidden');
+const isFileProtocol = window.location.protocol === 'file:';
+if (subtitle) subtitle.textContent = 'اتبع خطوات التثبيت حسب نوع جهازك ومتصفحك';
+if (banner) {
+banner.className = 'bg-navy-950/90 border border-slate-800 rounded-2xl p-3.5 text-xs sm:text-sm text-slate-200 leading-relaxed';
+banner.textContent = isFileProtocol
+? 'ملاحظة: أنت تفتح الملف محلياً (file://). بعد رفعه على رابط آمن (https://) سيظهر التثبيت التلقائي أو يمكنك إضافته للشاشة الرئيسية من المتصفح.'
+: 'إذا لم يظهر زر التثبيت التلقائي في متصفحك حالياً، يمكنك تثبيت شام ستور بسهولة عبر الخطوات أدناه من قائمة المتصفح أو زر المشاركة.';
+}
+}
+}
+
+function openInstallModal() {
+updateInstallUiState();
+const modal = document.getElementById('install-modal');
+if (modal) {
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+}
+
+function closeInstallModal() {
+const modal = document.getElementById('install-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+async function triggerNativeInstallPrompt() {
+if (!deferredInstallPrompt) {
+updateInstallUiState();
+showToast('اتبع خطوات التثبيت الموضحة في النافذة حسب جهازك', 'info');
+return;
+}
+try {
+const promptEvent = deferredInstallPrompt;
+deferredInstallPrompt = null;
+updateInstallUiState();
+promptEvent.prompt();
+const choice = await promptEvent.userChoice;
+if (choice && choice.outcome === 'accepted') {
+closeInstallModal();
+showToast('تم تثبيت تطبيق شام ستور بنجاح', 'success');
+} else {
+showToast('تم إلغاء التثبيت', 'info');
+}
+} catch (err) {
+updateInstallUiState();
+showToast('تعذر تشغيل نافذة التثبيت التلقائية؛ جرّب من قائمة المتصفح', 'info');
+}
+}
+
+/* =====================================================================
+الرسومات الفنية المدمجة (SVG)
+===================================================================== */
+function getArtworkSvg(type) {
+const arts = {
+pubg: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gPubg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#92400e"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gPubg)"/>
+<path d="M40 14L62 25V44C62 56.5 52.6 65.5 40 69C27.4 65.5 18 56.5 18 44V25L40 14Z" fill="#0f172a" stroke="#fde68a" stroke-width="2.5"/>
+<text x="40" y="45" text-anchor="middle" fill="#fbbf24" font-size="15" font-weight="900" font-family="Cairo, sans-serif">UC</text>
+</svg>`,
+freefire: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gFf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ef4444"/><stop offset="100%" stop-color="#7c2d12"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gFf)"/>
+<polygon points="40,14 60,36 40,66 20,36" fill="#fef08a" stroke="#ffffff" stroke-width="2"/>
+<polygon points="40,22 52,36 40,56 28,36" fill="#f97316"/>
+</svg>`,
+jawaker: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gJwk" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#064e3b"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gJwk)"/>
+<rect x="22" y="18" width="36" height="44" rx="7" fill="#022c22" stroke="#6ee7b7" stroke-width="2.5"/>
+<text x="40" y="45" text-anchor="middle" fill="#34d399" font-size="14" font-weight="900" font-family="Cairo, sans-serif">♠ ♦</text>
+</svg>`,
+codm: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gCod" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#334155"/><stop offset="100%" stop-color="#0f172a"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gCod)"/>
+<circle cx="40" cy="40" r="21" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+<text x="40" y="45" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="900" font-family="Cairo, sans-serif">COD</text>
+</svg>`,
+valorant: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gVal" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f43f5e"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gVal)"/>
+<polygon points="20,22 36,22 48,46 58,22 62,22 48,58 42,58" fill="#ffffff"/>
+</svg>`,
+syriatel: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gSyr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e11d48"/><stop offset="100%" stop-color="#881337"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gSyr)"/>
+<circle cx="40" cy="40" r="22" fill="rgba(255,255,255,0.14)" stroke="#fecdd3" stroke-width="2"/>
+<text x="40" y="44" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="900" font-family="Cairo, sans-serif">SYR</text>
+</svg>`,
+mtn: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gMtn" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#eab308"/><stop offset="100%" stop-color="#854d0e"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gMtn)"/>
+<ellipse cx="40" cy="40" rx="24" ry="16" fill="#0f172a" stroke="#fef08a" stroke-width="2.2"/>
+<text x="40" y="44" text-anchor="middle" fill="#facc15" font-size="13" font-weight="900" font-family="Cairo, sans-serif">MTN</text>
+</svg>`,
+steam: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gStm" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0284c7"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gStm)"/>
+<circle cx="40" cy="40" r="20" fill="#0f172a" stroke="#7dd3fc" stroke-width="2.5"/>
+<circle cx="40" cy="40" r="7" fill="#38bdf8"/>
+</svg>`,
+gplay: `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gGp" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22c55e"/><stop offset="100%" stop-color="#0ea5e9"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gGp)"/>
+<polygon points="28,22 58,40 28,58" fill="#ffffff"/>
+</svg>`
+};
+return arts[type] || `<svg viewBox="0 0 80 80" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="gCust" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#0ea5e9"/></linearGradient></defs>
+<rect width="80" height="80" fill="url(#gCust)"/>
+<circle cx="40" cy="40" r="19" fill="rgba(15,23,42,0.55)" stroke="#e0e7ff" stroke-width="2"/>
+<text x="40" y="45" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="900" font-family="Cairo, sans-serif">★</text>
+</svg>`;
+}
+
+function renderItemArtworkHtml(item) {
+if (item && item.customImage) {
+return `<img src="${escapeHtml(item.customImage)}" alt="${escapeHtml(item.name)}" class="w-full h-full object-cover">`;
+}
+return getArtworkSvg(item ? item.artworkType : 'custom');
+}
+
+/* =====================================================================
+حساب الأسعار والأرباح وتحديث الواجهة
+===================================================================== */
+function calculatePackagePricing(pkg) {
+const costUsd = Math.max(0.01, Number(pkg && pkg.costUsd) || 0.01);
+const rate = Math.max(1, Number(appState.settings.exchangeRateSyp) || 15000);
+const defaultPct = Math.max(0, Number(appState.settings.profitPercent) || 0);
+const fixedUsd = Math.max(0, Number(appState.settings.fixedProfitUsd) || 0);
+
+let sellUsd = 0;
+let effectivePct = defaultPct;
+
+if (pkg && pkg.overrideSellUsd !== undefined && pkg.overrideSellUsd !== null && Number(pkg.overrideSellUsd) > 0) {
+sellUsd = Number(Number(pkg.overrideSellUsd).toFixed(2));
+effectivePct = costUsd > 0 ? Number((((sellUsd - costUsd) / costUsd) * 100).toFixed(1)) : 0;
+} else {
+effectivePct = (pkg && pkg.profitPercent !== undefined && pkg.profitPercent !== null && pkg.profitPercent !== '')
+? Math.max(0, Number(pkg.profitPercent) || 0)
+: defaultPct;
+sellUsd = Number((costUsd * (1 + effectivePct / 100) + fixedUsd).toFixed(2));
+}
+
+const profitUsd = Number(Math.max(0, sellUsd - costUsd).toFixed(2));
+const sellSyp = Math.round(sellUsd * rate);
+const profitSyp = Math.round(profitUsd * rate);
+
+return { costUsd, sellUsd, profitUsd, sellSyp, profitSyp, profitPct: effectivePct, fixedUsd };
+}
+
+function formatPrice(pricing) {
+if (appState.settings.currency === 'USD') {
+return `$${pricing.sellUsd.toFixed(2)}`;
+}
+return `${pricing.sellSyp.toLocaleString('en-US')} ل.س`;
+}
+
+function updateCurrencyUi() {
+const label = document.getElementById('currency-toggle-label');
+const heroRate = document.getElementById('hero-rate-display');
+if (label) {
+label.textContent = appState.settings.currency === 'SYP' ? 'ل.س' : 'USD ($)';
+}
+if (heroRate) {
+heroRate.textContent = `1$ = ${Number(appState.settings.exchangeRateSyp).toLocaleString('en-US')} ل.س`;
+}
+}
+
+function updateStoreAutoTopupBanner() {
+const auto = appState.settings.autoTopup || {};
+const pill = document.getElementById('store-auto-status-pill');
+const modeText = document.getElementById('store-auto-mode-text');
+const descText = document.getElementById('store-auto-desc-text');
+
+if (auto.enabled) {
+if (pill) {
+pill.textContent = 'الشحن التلقائي مفعّل';
+pill.className = 'text-[11px] font-black px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
+}
+if (modeText) {
+modeText.textContent = auto.endpointUrl
+? 'متصل ببوابة شحن'
+: 'مفعّل (بانتظار ربط بوابة أو تنفيذ يدوي)';
+}
+if (descText) {
+descText.textContent = 'يمكنك تفعيل خيار "طلب شحن تلقائي" داخل نافذة الشحن بعد إدخال الاسم داخل اللعبة والآيدي ورقم التحويل.';
+}
+} else {
+if (pill) {
+pill.textContent = 'تأكيد يدوي / قيد المراجعة';
+pill.className = 'text-[11px] font-black px-2 py-0.5 rounded-full bg-gold-500/15 text-gold-400 border border-gold-500/30';
+}
+if (modeText) {
+modeText.textContent = 'الشحن التلقائي متوقف حالياً — التنفيذ اليدوي يعمل فوراً';
+}
+if (descText) {
+descText.textContent = 'حوّل المبلغ عبر شام كاش وأدخل الاسم داخل اللعبة والآيدي بدقة؛ يتم الشحن عبر ميداس باي / الموزع بعد مطابقة البيانات.';
+}
+}
+}
+
+function updateOrdersBadge() {
+const badge = document.getElementById('orders-count-badge');
+if (badge) {
+badge.textContent = String(appState.orders.length);
+}
+}
+
+function renderItemsGrid() {
+const grid = document.getElementById('items-grid');
+const emptyState = document.getElementById('empty-items-state');
+const searchInput = document.getElementById('store-search-input');
+const query = (searchInput ? searchInput.value : '').trim().toLowerCase();
+if (!grid) return;
+
+const filtered = appState.items.filter(item => {
+const matchCat = activeCategory === 'all' || item.category === activeCategory;
+const matchSearch = !query ||
+item.name.toLowerCase().includes(query) ||
+item.badge.toLowerCase().includes(query) ||
+item.packages.some(p => p.name.toLowerCase().includes(query));
+return matchCat && matchSearch;
+});
+
+if (filtered.length === 0) {
+grid.innerHTML = '';
+if (emptyState) emptyState.classList.remove('hidden');
+return;
+}
+
+if (emptyState) emptyState.classList.add('hidden');
+
+grid.innerHTML = filtered.map(item => {
+const firstPkg = item.packages[0] || { name: 'باقة شحن', costUsd: 1 };
+const pricing = calculatePackagePricing(firstPkg);
+return `
+<div class="glass-card item-card rounded-3xl p-4 sm:p-5 flex flex-col justify-between gap-4">
+<div class="space-y-3.5">
+<div class="flex items-start justify-between gap-3">
+<div class="w-16 h-16 rounded-2xl overflow-hidden border border-slate-700/80 shrink-0 shadow-md">
+${renderItemArtworkHtml(item)}
+</div>
+<span class="text-[11px] font-extrabold px-2.5 py-1 rounded-full bg-neon-500/10 text-neon-400 border border-neon-500/25">
+${escapeHtml(item.badge)}
+</span>
+</div>
+<div>
+<h3 class="text-base sm:text-lg font-black text-white leading-snug">${escapeHtml(item.name)}</h3>
+<p class="text-xs text-slate-400 mt-1">
+${item.packages.length > 0 ? `${item.packages.length} باقات متوفرة` : 'شحن حسب الطلب'}
+${item.isMobileTopup ? ' • قيمة مخصصة' : ''}
+</p>
+</div>
+</div>
+<div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">
+<div>
+<span class="block text-[11px] text-slate-400">يبدأ من</span>
+<span class="text-sm sm:text-base font-black text-gold-400">${formatPrice(pricing)}</span>
+</div>
+<button type="button" data-action="open-item-topup" data-item-id="${escapeHtml(item.id)}"
+class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-500 hover:brightness-110 text-navy-950 text-xs sm:text-sm font-black transition-all cursor-pointer">
+اشحن الآن
+</button>
+</div>
+</div>
+`;
+}).join('');
+}
+
+/* =====================================================================
+باركود شام كاش (رفع + لصق + رابط + Canvas تلقائي)
+===================================================================== */
+function drawFallbackQrCanvas(canvas, text, size) {
+if (!canvas) return;
+const px = size || 112;
+canvas.width = px;
+canvas.height = px;
+const ctx = canvas.getContext('2d');
+if (!ctx) return;
+
+ctx.fillStyle = '#ffffff';
+ctx.fillRect(0, 0, px, px);
+
+const cells = 21;
+const margin = Math.max(6, Math.round(px * 0.08));
+const usable = px - margin * 2;
+const cellSize = usable / cells;
+
+let hash = 2166136261;
+const str = String(text || 'SHAM-CASH');
+for (let i = 0; i < str.length; i++) {
+hash ^= str.charCodeAt(i);
+hash = Math.imul(hash, 16777619);
+}
+
+function isFinder(r, c) {
+const tl = r < 7 && c < 7;
+const tr = r < 7 && c >= cells - 7;
+const bl = r >= cells - 7 && c < 7;
+if (!tl && !tr && !bl) return false;
+const lr = r >= cells - 7 ? r - (cells - 7) : r;
+const lc = c >= cells - 7 ? c - (cells - 7) : c;
+return lr === 0 || lr === 6 || lc === 0 || lc === 6 || (lr >= 2 && lr <= 4 && lc >= 2 && lc <= 4);
+}
+
+ctx.fillStyle = '#0f172a';
+for (let r = 0; r < cells; r++) {
+for (let c = 0; c < cells; c++) {
+let dark = false;
+if (r < 8 && c < 8 || r < 8 && c >= cells - 8 || r >= cells - 8 && c < 8) {
+dark = isFinder(r, c);
+} else {
+const mix = (hash ^ (r * 73856093) ^ (c * 19349663)) >>> 0;
+dark = (mix % 3) !== 0;
+}
+if (dark) {
+ctx.fillRect(
+Math.round(margin + c * cellSize),
+Math.round(margin + r * cellSize),
+Math.ceil(cellSize),
+Math.ceil(cellSize)
+);
+}
+}
+}
+}
+
+function renderQrIntoPair(canvasId, imgId, size) {
+const canvas = document.getElementById(canvasId);
+const img = document.getElementById(imgId);
+const customQr = String(appState.settings.merchantQrImage || '').trim();
+
+if (customQr && (customQr.startsWith('data:image') || customQr.startsWith('http://') || customQr.startsWith('https://'))) {
+if (img) {
+img.onerror = function () {
+img.classList.add('hidden');
+if (canvas) {
+canvas.classList.remove('hidden');
+drawFallbackQrCanvas(canvas, `SHAM-CASH:${appState.settings.shamCashWallet}`, size);
+}
+};
+img.src = customQr;
+img.classList.remove('hidden');
+}
+if (canvas) canvas.classList.add('hidden');
+} else {
+if (img) {
+img.src = '';
+img.classList.add('hidden');
+}
+if (canvas) {
+canvas.classList.remove('hidden');
+drawFallbackQrCanvas(canvas, `SHAM-CASH:${appState.settings.shamCashWallet}`, size);
+}
+}
+}
+
+function syncAllQrPreviews() {
+renderQrIntoPair('admin-qr-canvas', 'admin-qr-img', 112);
+if (activeModalItemId) {
+renderQrIntoPair('modal-qr-canvas', 'modal-qr-img', 112);
+}
+if (lastReceiptOrder) {
+renderQrIntoPair('receipt-modal-qr-canvas', 'receipt-modal-qr-img', 68);
+}
+}
+
+function renderAdminQrSection() {
+renderQrIntoPair('admin-qr-canvas', 'admin-qr-img', 112);
+const badge = document.getElementById('admin-qr-status-badge');
+const clearBtn = document.getElementById('admin-qr-clear-btn');
+const info = document.getElementById('admin-qr-info');
+const urlInput = document.getElementById('admin-qr-url-input');
+
+if (appState.settings.merchantQrImage) {
+if (badge) {
+badge.textContent = 'صورة مفعّلة';
+badge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
+}
+if (clearBtn) clearBtn.classList.remove('hidden');
+if (info) info.textContent = 'صورة باركود شام كاش مفعّلة وتظهر للزبون وفي الإيصال.';
+if (urlInput && appState.settings.merchantQrImage.startsWith('http')) {
+urlInput.value = appState.settings.merchantQrImage;
+}
+} else {
+if (badge) {
+badge.textContent = 'تلقائي';
+badge.className = 'text-[11px] font-bold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300';
+}
+if (clearBtn) clearBtn.classList.add('hidden');
+if (info) info.textContent = 'ارفع صورة الباركود أو الصقها أو أدخل رابطها.';
+}
+}
+
+function normalizeAndSaveQrImage(sourceUrl, successMessage = 'تم حفظ باركود شام كاش بنجاح') {
+const clean = String(sourceUrl || '').trim();
+if (!clean) {
+showToast('تعذر قراءة الصورة', 'error');
+return;
+}
+
+if (clean.startsWith('http://') || clean.startsWith('https://')) {
+appState.settings.merchantQrImage = clean;
+if (saveAppState()) {
+renderAdminQrSection();
+syncAllQrPreviews();
+showToast(successMessage, 'success');
+}
+return;
+}
+
+const probe = new Image();
+probe.onload = function () {
+try {
+const maxSide = 560;
+let w = probe.naturalWidth || probe.width || maxSide;
+let h = probe.naturalHeight || probe.height || maxSide;
+if (w > maxSide || h > maxSide) {
+if (w >= h) {
+h = Math.max(1, Math.round((h * maxSide) / w));
+w = maxSide;
+} else {
+w = Math.max(1, Math.round((w * maxSide) / h));
+h = maxSide;
+}
+}
+const c = document.createElement('canvas');
+c.width = w;
+c.height = h;
+const ctx = c.getContext('2d');
+ctx.fillStyle = '#ffffff';
+ctx.fillRect(0, 0, w, h);
+ctx.drawImage(probe, 0, 0, w, h);
+const compressed = c.toDataURL('image/jpeg', 0.85);
+appState.settings.merchantQrImage = (compressed && compressed.length > 32) ? compressed : clean;
+} catch (e) {
+appState.settings.merchantQrImage = clean;
+}
+if (saveAppState()) {
+renderAdminQrSection();
+syncAllQrPreviews();
+showToast(successMessage, 'success');
+}
+};
+probe.onerror = function () {
+if (clean.startsWith('data:image/')) {
+appState.settings.merchantQrImage = clean;
+if (saveAppState()) {
+renderAdminQrSection();
+syncAllQrPreviews();
+showToast(successMessage, 'success');
+}
+} else {
+showToast('الصورة غير صالحة أو تعذر تحميلها', 'error');
+}
+};
+probe.src = clean;
+}
+
+function processQrFile(file) {
+if (!file) {
+showToast('لم يتم اختيار أي ملف', 'error');
+return;
+}
+const isImg = (file.type && file.type.toLowerCase().startsWith('image/')) ||
+/\.(png|jpe?g|webp|gif|bmp|svg)$/i.test(String(file.name || ''));
+if (!isImg) {
+showToast('يرجى اختيار ملف صورة صالح', 'error');
+return;
+}
+if (file.size > 15 * 1024 * 1024) {
+showToast('حجم الصورة كبير جداً', 'error');
+return;
+}
+const reader = new FileReader();
+reader.onload = function (ev) {
+const dataUrl = ev && ev.target && ev.target.result ? String(ev.target.result) : '';
+normalizeAndSaveQrImage(dataUrl, 'تم رفع وحفظ باركود شام كاش بنجاح');
+};
+reader.onerror = function () {
+showToast('تعذر قراءة ملف الصورة', 'error');
+};
+reader.readAsDataURL(file);
+}
+
+function extractImageFromClipboard(clipboardData) {
+if (!clipboardData) return null;
+if (clipboardData.items && clipboardData.items.length > 0) {
+for (let i = 0; i < clipboardData.items.length; i++) {
+const it = clipboardData.items[i];
+if (it.kind === 'file' && it.type && it.type.toLowerCase().startsWith('image/')) {
+const f = it.getAsFile();
+if (f) return f;
+}
+}
+}
+if (clipboardData.files && clipboardData.files.length > 0) {
+for (let j = 0; j < clipboardData.files.length; j++) {
+const fl = clipboardData.files[j];
+if (fl && fl.type && fl.type.toLowerCase().startsWith('image/')) return fl;
+}
+}
+return null;
+}
+
+function handleQrPasteEvent(event) {
+if (!event || !event.clipboardData) return false;
+const imgFile = extractImageFromClipboard(event.clipboardData);
+if (imgFile) {
+event.preventDefault();
+processQrFile(imgFile);
+return true;
+}
+const txt = (event.clipboardData.getData('text/plain') || '').trim();
+if (txt && (txt.startsWith('data:image/') || txt.startsWith('http://') || txt.startsWith('https://'))) {
+event.preventDefault();
+const urlInput = document.getElementById('admin-qr-url-input');
+if (urlInput) urlInput.value = txt;
+normalizeAndSaveQrImage(txt, 'تم لصق وحفظ رابط/صورة الباركود');
+return true;
+}
+return false;
+}
+
+async function handlePasteQrButton() {
+const dz = document.getElementById('admin-qr-dropzone');
+if (dz) dz.focus();
+
+if (navigator.clipboard && typeof navigator.clipboard.read === 'function') {
+try {
+const items = await navigator.clipboard.read();
+for (const item of items) {
+const imgType = item.types.find(t => t.toLowerCase().startsWith('image/'));
+if (imgType) {
+const blob = await item.getType(imgType);
+if (blob) {
+const file = new File([blob], 'qr-paste.' + (imgType.split('/')[1] || 'png'), { type: imgType });
+processQrFile(file);
+return;
+}
+}
+if (item.types.includes('text/plain')) {
+const textBlob = await item.getType('text/plain');
+const textVal = (await textBlob.text()).trim();
+if (textVal.startsWith('data:image/') || textVal.startsWith('http://') || textVal.startsWith('https://')) {
+normalizeAndSaveQrImage(textVal, 'تم لصق الباركود من الحافظة');
+return;
+}
+}
+}
+showToast('لا توجد صورة في الحافظة؛ انسخ الصورة أولاً أو استخدم "رفع صورة الباركود"', 'info');
+return;
+} catch (e) {}
+}
+
+if (navigator.clipboard && typeof navigator.clipboard.readText === 'function') {
+try {
+const txt = (await navigator.clipboard.readText()).trim();
+if (txt.startsWith('data:image/') || txt.startsWith('http://') || txt.startsWith('https://')) {
+normalizeAndSaveQrImage(txt, 'تم لصق رابط الباركود من الحافظة');
+return;
+}
+} catch (e) {}
+}
+
+showToast('اضغط في المربع المنقط ثم الصق بـ Ctrl+V أو اضغط "رفع صورة الباركود"', 'info');
+}
+
+/* =====================================================================
+نافذة الشحن والإيصال وطلباتي والدعم الفني ودليل الشدات
+===================================================================== */
+function openTopupModal(itemId) {
+const item = appState.items.find(i => i.id === itemId);
+if (!item) return;
+
+activeModalItemId = item.id;
+selectedPackageId = item.packages[0] ? item.packages[0].id : null;
+customMobileCostUsd = null;
+
+const auto = appState.settings.autoTopup || {};
+const autoCheckbox = document.getElementById('modal-auto-topup-checkbox');
+const autoHint = document.getElementById('modal-auto-topup-hint');
+if (autoCheckbox) {
+autoCheckbox.checked = Boolean(auto.enabled);
+}
+if (autoHint) {
+autoHint.textContent = auto.enabled
+? (auto.endpointUrl ? 'الشحن التلقائي مفعّل على بوابة الربط' : 'الشحن التلقائي مفعّل (سيتم إرساله حسب إعدادات التاجر)')
+: 'الشحن التلقائي متوقف حالياً؛ سيتم التنفيذ يدوياً بعد مطابقة الاسم والآيدي والحوالة.';
+}
+
+document.getElementById('modal-item-artwork').innerHTML = renderItemArtworkHtml(item);
+document.getElementById('modal-item-title').textContent = item.name;
+document.getElementById('modal-item-subtitle').textContent = item.badge;
+document.getElementById('modal-account-name-label').textContent = item.accountNameLabel || 'الاسم داخل اللعبة / اسم الحساب';
+document.getElementById('modal-account-name-input').placeholder = item.accountNamePlaceholder || 'أدخل الاسم داخل اللعبة أو الحساب';
+document.getElementById('modal-account-name-input').value = '';
+document.getElementById('modal-target-label').textContent = item.targetLabel;
+document.getElementById('modal-target-input').placeholder = item.targetPlaceholder;
+document.getElementById('modal-target-input').value = '';
+document.getElementById('modal-tx-input').value = '';
+document.getElementById('modal-wallet-label').textContent = appState.settings.walletLabel || 'محفظة شام كاش الرسمية';
+document.getElementById('modal-wallet-number').textContent = appState.settings.shamCashWallet || '9988776655';
+
+const customBox = document.getElementById('modal-custom-mobile-box');
+const customInput = document.getElementById('modal-custom-usd-input');
+if (item.isMobileTopup) {
+customBox.classList.remove('hidden');
+customInput.value = '';
+} else {
+customBox.classList.add('hidden');
+customInput.value = '';
+}
+
+renderModalPackages();
+renderQrIntoPair('modal-qr-canvas', 'modal-qr-img', 112);
+
+const modal = document.getElementById('topup-modal');
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+
+function closeTopupModal() {
+const modal = document.getElementById('topup-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+activeModalItemId = null;
+}
+
+function getActiveSelectionDetails() {
+const item = appState.items.find(i => i.id === activeModalItemId);
+if (!item) return null;
+
+if (item.isMobileTopup && customMobileCostUsd && customMobileCostUsd > 0) {
+return {
+item,
+packageName: `رصيد مخصص (${customMobileCostUsd.toFixed(2)}$)`,
+pricing: calculatePackagePricing({ costUsd: customMobileCostUsd })
+};
+}
+
+const pkg = item.packages.find(p => p.id === selectedPackageId) || item.packages[0];
+if (!pkg) {
+return {
+item,
+packageName: 'باقة شحن',
+pricing: calculatePackagePricing({ costUsd: 1 })
+};
+}
+
+return {
+item,
+packageName: pkg.name,
+pricing: calculatePackagePricing(pkg)
+};
+}
+
+function renderModalPackages() {
+const item = appState.items.find(i => i.id === activeModalItemId);
+const list = document.getElementById('modal-packages-list');
+const badge = document.getElementById('modal-currency-badge');
+if (!item || !list) return;
+
+if (badge) {
+badge.textContent = appState.settings.currency === 'USD' ? 'العرض بالدولار ($)' : 'العرض بالليرة السورية (ل.س)';
+}
+
+if (!item.packages || item.packages.length === 0) {
+list.innerHTML = `<div class="col-span-2 text-xs text-slate-400 bg-navy-950 p-3 rounded-xl border border-slate-800">لا توجد باقات جاهزة حالياً لهذا العنصر.</div>`;
+} else {
+list.innerHTML = item.packages.map(pkg => {
+const pricing = calculatePackagePricing(pkg);
+const isSel = !customMobileCostUsd && pkg.id === selectedPackageId;
+return `
+<button type="button" data-action="select-pkg" data-pkg-id="${escapeHtml(pkg.id)}"
+class="p-3 rounded-2xl border text-right transition-all cursor-pointer ${
+isSel
+? 'bg-gold-500/15 border-gold-500 text-white'
+: 'bg-navy-950 border-slate-800 text-slate-300 hover:border-slate-600'
+}">
+<div class="text-xs sm:text-sm font-black ${isSel ? 'text-gold-400' : 'text-white'}">${escapeHtml(pkg.name)}</div>
+<div class="text-xs font-extrabold text-emerald-400 mt-1">${formatPrice(pricing)}</div>
+</button>
+`;
+}).join('');
+}
+
+const sel = getActiveSelectionDetails();
+const totalEl = document.getElementById('modal-total-price-text');
+if (sel && totalEl) {
+totalEl.textContent = `${sel.pricing.sellSyp.toLocaleString('en-US')} ل.س ($${sel.pricing.sellUsd.toFixed(2)})`;
+}
+}
+
+function copyTextSafely(text, successMsg) {
+const val = String(text || '');
+if (!val) return;
+if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+navigator.clipboard.writeText(val).then(() => {
+showToast(successMsg || 'تم النسخ', 'success');
+}).catch(() => execCommandCopy(val, successMsg));
+} else {
+execCommandCopy(val, successMsg);
+}
+}
+
+function execCommandCopy(val, successMsg) {
+const ta = document.createElement('textarea');
+ta.value = val;
+ta.style.position = 'fixed';
+ta.style.opacity = '0';
+document.body.appendChild(ta);
+ta.select();
+try {
+document.execCommand('copy');
+showToast(successMsg || 'تم النسخ', 'success');
+} catch (e) {
+showToast('تعذر النسخ تلقائياً', 'error');
+}
+ta.remove();
+}
+
+function submitTopupOrder() {
+const sel = getActiveSelectionDetails();
+if (!sel) return;
+
+const accountNameInput = document.getElementById('modal-account-name-input');
+const targetInput = document.getElementById('modal-target-input');
+const txInput = document.getElementById('modal-tx-input');
+const autoCheckbox = document.getElementById('modal-auto-topup-checkbox');
+
+const accountName = (accountNameInput ? accountNameInput.value : '').trim();
+const targetValue = (targetInput ? targetInput.value : '').trim();
+const txValue = (txInput ? txInput.value : '').trim();
+const requestedAutoTopup = Boolean(autoCheckbox && autoCheckbox.checked);
+
+if (!accountName && !sel.item.isMobileTopup) {
+showToast('يرجى إدخال الاسم داخل اللعبة أو اسم الحساب للتأكيد قبل الشحن', 'error');
+if (accountNameInput) accountNameInput.focus();
+return;
+}
+if (!targetValue) {
+showToast(`يرجى إدخال ${sel.item.targetLabel}`, 'error');
+if (targetInput) targetInput.focus();
+return;
+}
+if (!txValue) {
+showToast('يرجى إدخال رقم عملية التحويل في شام كاش', 'error');
+if (txInput) txInput.focus();
+return;
+}
+
+const orderId = 'SH-' + Math.floor(100000 + Math.random() * 900000);
+const newOrder = {
+id: orderId,
+itemId: sel.item.id,
+itemName: sel.item.name,
+packageName: sel.packageName,
+accountName: accountName || 'غير محدد',
+targetValue,
+txRef: txValue,
+autoTopupRequested: requestedAutoTopup,
+costUsd: sel.pricing.costUsd,
+sellUsd: sel.pricing.sellUsd,
+profitUsd: sel.pricing.profitUsd,
+sellSyp: sel.pricing.sellSyp,
+profitSyp: sel.pricing.profitSyp,
+status: 'pending',
+createdAt: new Date().toLocaleString('ar-SY', { hour: '2-digit', minute: '2-digit', day: '2-digit', month: '2-digit' })
+};
+
+appState.orders.unshift(newOrder);
+const autoCfg = appState.settings.autoTopup || {};
+if (autoCfg.enabled && requestedAutoTopup && autoCfg.triggerMode === 'on_create') {
+dispatchAutoTopupOrder(newOrder, 'إنشاء الطلب (شحن تلقائي)');
+}
+saveAppState();
+updateOrdersBadge();
+closeTopupModal();
+openReceiptModal(newOrder);
+
+if (!document.getElementById('admin-modal').classList.contains('hidden')) {
+renderAdminProfitStats();
+renderAdminOrdersTable();
+renderAdminAutoTopupLogs();
+}
+
+showToast(`تم إرسال الطلب ${orderId} بنجاح`, 'success');
+}
+
+function getStatusLabel(status) {
+if (status === 'confirmed') return 'مؤكد ومشحون';
+if (status === 'rejected') return 'مرفوض';
+return 'قيد المراجعة';
+}
+
+function renderStatusPill(status) {
+if (status === 'confirmed') {
+return `<span class="text-[11px] font-black px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">مؤكد ومشحون</span>`;
+}
+if (status === 'rejected') {
+return `<span class="text-[11px] font-black px-2.5 py-1 rounded-full bg-rose-500/15 text-rose-400 border border-rose-500/30">مرفوض</span>`;
+}
+return `<span class="text-[11px] font-black px-2.5 py-1 rounded-full bg-gold-500/15 text-gold-400 border border-gold-500/30">قيد المراجعة</span>`;
+}
+
+function openReceiptModal(order) {
+if (!order) return;
+lastReceiptOrder = order;
+
+document.getElementById('receipt-modal-status').textContent = `الحالة: ${getStatusLabel(order.status)}`;
+document.getElementById('receipt-modal-id').textContent = order.id;
+document.getElementById('receipt-modal-pkg').textContent = `${order.itemName} — ${order.packageName}`;
+document.getElementById('receipt-modal-account-name').textContent = order.accountName || 'غير محدد';
+document.getElementById('receipt-modal-target').textContent = order.targetValue;
+document.getElementById('receipt-modal-tx').textContent = order.txRef;
+document.getElementById('receipt-modal-topup-mode').textContent = order.autoTopupRequested ? 'شحن تلقائي (Auto Top-Up)' : 'شحن يدوي / مراجعة التاجر';
+document.getElementById('receipt-modal-amount').textContent = `${Number(order.sellSyp).toLocaleString('en-US')} ل.س ($${Number(order.sellUsd).toFixed(2)})`;
+document.getElementById('receipt-modal-wallet-label').textContent = appState.settings.walletLabel || 'محفظة شام كاش الرسمية';
+document.getElementById('receipt-modal-wallet-addr').textContent = appState.settings.shamCashWallet || '9988776655';
+document.getElementById('receipt-modal-time').textContent = `تاريخ التسجيل: ${order.createdAt}`;
+
+renderQrIntoPair('receipt-modal-qr-canvas', 'receipt-modal-qr-img', 68);
+
+const modal = document.getElementById('receipt-modal');
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+
+function closeReceiptModal() {
+const modal = document.getElementById('receipt-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+function openOrdersModal() {
+renderCustomerOrdersList();
+const modal = document.getElementById('orders-modal');
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+
+function closeOrdersModal() {
+const modal = document.getElementById('orders-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+function renderCustomerOrdersList() {
+const list = document.getElementById('customer-orders-list');
+if (!list) return;
+
+if (appState.orders.length === 0) {
+list.innerHTML = `<div class="text-center py-10 text-xs sm:text-sm text-slate-400">لا توجد طلبات مسجلة حتى الآن.</div>`;
+return;
+}
+
+list.innerHTML = appState.orders.map(ord => `
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="space-y-1 text-xs">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-mono font-black text-neon-400">${escapeHtml(ord.id)}</span>
+<span class="text-slate-500">•</span>
+<span class="text-slate-400">${escapeHtml(ord.createdAt)}</span>
+${ord.autoTopupRequested ? `<span class="px-2 py-0.5 rounded-full bg-neon-500/15 text-neon-400 font-bold">شحن تلقائي</span>` : ''}
+</div>
+<div class="text-sm font-black text-white">${escapeHtml(ord.itemName)} — <span class="text-gold-400">${escapeHtml(ord.packageName)}</span></div>
+<div class="text-slate-400">الاسم باللعبة/الحساب: <span class="font-bold text-gold-300">${escapeHtml(ord.accountName || 'غير محدد')}</span> | الآيدي: <span class="font-mono text-slate-200">${escapeHtml(ord.targetValue)}</span> | التحويل: <span class="font-mono text-slate-200">${escapeHtml(ord.txRef)}</span></div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between gap-2 shrink-0">
+<span class="text-sm font-black text-white">${Number(ord.sellSyp).toLocaleString('en-US')} ل.س</span>
+<div class="flex items-center gap-2">
+${renderStatusPill(ord.status)}
+<button type="button" data-action="view-receipt" data-order-id="${escapeHtml(ord.id)}"
+class="px-2.5 py-1 rounded-lg bg-navy-850 hover:bg-navy-800 border border-slate-700 text-[11px] font-bold text-neon-400 cursor-pointer">
+الإيصال
+</button>
+</div>
+</div>
+</div>
+`).join('');
+}
+
+function openUcGuideModal() {
+const modal = document.getElementById('uc-guide-modal');
+if (modal) {
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+}
+
+function closeUcGuideModal() {
+const modal = document.getElementById('uc-guide-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+function openSupportModal() {
+const sup = appState.settings.support || {};
+document.getElementById('support-welcome-text').textContent = sup.welcomeMessage || '';
+document.getElementById('support-hours-text').textContent = `أوقات الدعم: ${sup.hours || 'متاح يومياً'}`;
+
+const cleanWa = String(sup.whatsapp || '').replace(/[^0-9]/g, '');
+const waLink = document.getElementById('support-whatsapp-link');
+waLink.textContent = cleanWa ? `+${cleanWa}` : 'غير محدد';
+waLink.href = cleanWa ? `https://wa.me/${cleanWa}` : '#';
+
+const cleanTg = String(sup.telegram || '').replace(/^@+/, '');
+const tgLink = document.getElementById('support-telegram-link');
+tgLink.textContent = cleanTg ? `@${cleanTg}` : 'غير محدد';
+tgLink.href = cleanTg ? `https://t.me/${cleanTg}` : '#';
+
+document.getElementById('support-phone-display').textContent = sup.phone || 'غير محدد';
+document.getElementById('support-email-display').textContent = sup.email || 'غير محدد';
+
+const modal = document.getElementById('support-modal');
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+
+function closeSupportModal() {
+const modal = document.getElementById('support-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+/* =====================================================================
+الدخول السري ولوحة الإدارة
+===================================================================== */
+function openPinModal() {
+const modal = document.getElementById('pin-modal');
+const input = document.getElementById('admin-pin-input');
+if (input) input.value = '';
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+setTimeout(() => { if (input) input.focus(); }, 50);
+}
+
+function closePinModal() {
+const modal = document.getElementById('pin-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+function verifyAdminPin() {
+const input = document.getElementById('admin-pin-input');
+const entered = (input ? input.value : '').trim();
+const expected = String(appState.settings.adminPin || DEFAULT_PIN);
+if (entered === expected) {
+closePinModal();
+openAdminModal();
+showToast('تم فتح لوحة الإدارة', 'success');
+} else {
+showToast('الرمز السري غير صحيح', 'error');
+if (input) {
+input.value = '';
+input.focus();
+}
+}
+}
+
+function setActiveAdminTab(tabId) {
+activeAdminTab = tabId;
+document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+const active = btn.dataset.adminTab === tabId;
+btn.className = active
+? 'admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-gold-500 text-navy-950'
+: 'admin-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800';
+});
+document.querySelectorAll('.admin-tab-panel').forEach(panel => {
+if (panel.id === `admin-tab-${tabId}`) {
+panel.classList.remove('hidden');
+} else {
+panel.classList.add('hidden');
+}
+});
+}
+
+function openAdminModal() {
+document.getElementById('admin-rate-input').value = appState.settings.exchangeRateSyp;
+document.getElementById('admin-profit-pct-input').value = appState.settings.profitPercent;
+document.getElementById('admin-fixed-profit-input').value = appState.settings.fixedProfitUsd;
+document.getElementById('admin-wallet-label-input').value = appState.settings.walletLabel;
+document.getElementById('admin-wallet-input').value = appState.settings.shamCashWallet;
+
+const sup = appState.settings.support || {};
+document.getElementById('admin-support-whatsapp').value = sup.whatsapp || '';
+document.getElementById('admin-support-telegram').value = sup.telegram || '';
+document.getElementById('admin-support-phone').value = sup.phone || '';
+document.getElementById('admin-support-email').value = sup.email || '';
+document.getElementById('admin-support-hours').value = sup.hours || '';
+document.getElementById('admin-support-welcome').value = sup.welcomeMessage || '';
+
+document.getElementById('admin-current-pin-input').value = '';
+document.getElementById('admin-new-pin-input').value = '';
+document.getElementById('admin-confirm-pin-input').value = '';
+
+previewAdminSettings();
+renderAdminQrSection();
+populateAdminPackageSelect();
+updateAdminPackagePreview();
+renderAdminProfitStats();
+renderAdminItemsManager();
+renderAdminOrdersTable();
+renderAdminAutoTopupSection();
+setActiveAdminTab(activeAdminTab);
+
+const modal = document.getElementById('admin-modal');
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+}
+
+function closeAdminModal() {
+const modal = document.getElementById('admin-modal');
+if (modal) {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+function previewAdminSettings() {
+const el = document.getElementById('admin-settings-preview');
+if (!el) return;
+const rate = Math.max(1, Number(document.getElementById('admin-rate-input').value) || 15000);
+const pct = Math.max(0, Number(document.getElementById('admin-profit-pct-input').value) || 0);
+const fixed = Math.max(0, Number(document.getElementById('admin-fixed-profit-input').value) || 0);
+
+const sampleSellUsd = Number((10 * (1 + pct / 100) + fixed).toFixed(2));
+const sampleProfitUsd = Number(Math.max(0, sampleSellUsd - 10).toFixed(2));
+const sampleProfitSyp = Math.round(sampleProfitUsd * rate);
+
+el.innerHTML = `مثال باقة $10: بيع $${sampleSellUsd.toFixed(2)} (${Math.round(sampleSellUsd * rate).toLocaleString('en-US')} ل.س) — ربح <span class="text-emerald-400">${sampleProfitSyp.toLocaleString('en-US')} ل.س ($${sampleProfitUsd.toFixed(2)})</span>`;
+}
+
+function savePricingSettings() {
+const rate = Math.max(1, Number(document.getElementById('admin-rate-input').value) || 0);
+const pct = Math.max(0, Number(document.getElementById('admin-profit-pct-input').value) || 0);
+const fixedUsd = Math.max(0, Number(document.getElementById('admin-fixed-profit-input').value) || 0);
+const walletLabel = (document.getElementById('admin-wallet-label-input').value || '').trim() || 'محفظة شام كاش الرسمية';
+const wallet = (document.getElementById('admin-wallet-input').value || '').trim();
+
+if (!rate || rate < 1) {
+showToast('يرجى إدخال سعر صرف صحيح', 'error');
+return;
+}
+if (!wallet) {
+showToast('يرجى إدخال رقم محفظة شام كاش', 'error');
+return;
+}
+
+appState.settings.exchangeRateSyp = Math.round(rate);
+appState.settings.profitPercent = pct;
+appState.settings.fixedProfitUsd = Number(fixedUsd.toFixed(2));
+appState.settings.walletLabel = walletLabel;
+appState.settings.shamCashWallet = wallet;
+
+saveAppState();
+updateCurrencyUi();
+renderItemsGrid();
+updateAdminPackagePreview();
+renderAdminItemsManager();
+renderAdminProfitStats();
+syncAllQrPreviews();
+showToast('تم حفظ وتطبيق سعر الصرف والربح والمحفظة', 'success');
+}
+
+function populateAdminPackageSelect() {
+const select = document.getElementById('admin-pkg-item-select');
+if (!select) return;
+const prev = select.value;
+select.innerHTML = appState.items.map(item =>
+`<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)}</option>`
+).join('');
+if (prev && appState.items.some(i => i.id === prev)) {
+select.value = prev;
+}
+}
+
+function readPackageForm() {
+const itemId = document.getElementById('admin-pkg-item-select').value;
+const title = (document.getElementById('admin-pkg-title-input').value || '').trim();
+const unit = (document.getElementById('admin-pkg-unit-input').value || '').trim();
+const costUsd = Number(document.getElementById('admin-pkg-cost-usd-input').value) || 0;
+const customProfitRaw = document.getElementById('admin-pkg-custom-profit-input').value;
+const overrideRaw = document.getElementById('admin-pkg-override-usd-input').value;
+
+const profitPercent = (customProfitRaw !== '' && !isNaN(Number(customProfitRaw)))
+? Math.max(0, Number(customProfitRaw))
+: undefined;
+const overrideSellUsd = (overrideRaw !== '' && !isNaN(Number(overrideRaw)) && Number(overrideRaw) > 0)
+? Number(Number(overrideRaw).toFixed(2))
+: undefined;
+
+return { itemId, title, unit, costUsd, profitPercent, overrideSellUsd };
+}
+
+function updateAdminPackagePreview() {
+const box = document.getElementById('admin-pkg-calc-preview');
+if (!box) return;
+const f = readPackageForm();
+if (!f.costUsd || f.costUsd <= 0) {
+box.textContent = 'أدخل التكلفة بالدولار ($) لمعاينة سعر البيع والربح المتوقع...';
+return;
+}
+const pr = calculatePackagePricing({
+costUsd: f.costUsd,
+profitPercent: f.profitPercent,
+overrideSellUsd: f.overrideSellUsd
+});
+box.innerHTML = `سعر البيع: <span class="text-gold-400">${pr.sellSyp.toLocaleString('en-US')} ل.س ($${pr.sellUsd.toFixed(2)})</span> • الربح: <span class="text-emerald-400">${pr.profitSyp.toLocaleString('en-US')} ل.س ($${pr.profitUsd.toFixed(2)})</span>`;
+}
+
+function addAdminPackage() {
+const f = readPackageForm();
+const item = appState.items.find(i => i.id === f.itemId);
+if (!item) {
+showToast('اختر العنصر أولاً', 'error');
+return;
+}
+if (!f.title) {
+showToast('أدخل اسم الباقة', 'error');
+return;
+}
+if (!f.costUsd || f.costUsd <= 0) {
+showToast('أدخل تكلفة صحيحة بالدولار ($)', 'error');
+return;
+}
+
+const newPkg = {
+id: 'pkg-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+name: f.title,
+unit: f.unit,
+costUsd: Number(f.costUsd.toFixed(4))
+};
+if (f.profitPercent !== undefined) newPkg.profitPercent = f.profitPercent;
+if (f.overrideSellUsd !== undefined) newPkg.overrideSellUsd = f.overrideSellUsd;
+
+item.packages.push(newPkg);
+saveAppState();
+renderItemsGrid();
+renderAdminItemsManager();
+
+document.getElementById('admin-pkg-title-input').value = '';
+document.getElementById('admin-pkg-unit-input').value = '';
+document.getElementById('admin-pkg-cost-usd-input').value = '';
+document.getElementById('admin-pkg-custom-profit-input').value = '';
+document.getElementById('admin-pkg-override-usd-input').value = '';
+updateAdminPackagePreview();
+showToast(`تمت إضافة باقة "${f.title}"`, 'success');
+}
+
+function deletePackageOffer(itemId, pkgId) {
+const item = appState.items.find(i => i.id === itemId);
+if (!item) return;
+const pkg = item.packages.find(p => p.id === pkgId);
+openConfirmDialog(
+'إزالة العرض / الباقة',
+`هل تريد إزالة "${pkg ? pkg.name : 'هذه الباقة'}" من ${item.name}؟`,
+function () {
+item.packages = item.packages.filter(p => p.id !== pkgId);
+saveAppState();
+renderItemsGrid();
+renderAdminItemsManager();
+if (activeModalItemId === itemId) {
+selectedPackageId = item.packages[0] ? item.packages[0].id : null;
+renderModalPackages();
+}
+showToast('تمت إزالة العرض بنجاح', 'info');
+}
+);
+}
+
+function deleteStoreItem(itemId) {
+const item = appState.items.find(i => i.id === itemId);
+if (!item) return;
+openConfirmDialog(
+'إزالة العنصر بالكامل',
+`هل تريد إزالة "${item.name}" وجميع باقاته من المتجر؟`,
+function () {
+appState.items = appState.items.filter(i => i.id !== itemId);
+saveAppState();
+populateAdminPackageSelect();
+renderItemsGrid();
+renderAdminItemsManager();
+if (activeModalItemId === itemId) closeTopupModal();
+showToast(`تمت إزالة "${item.name}"`, 'info');
+}
+);
+}
+
+function addNewStoreItem() {
+const name = (document.getElementById('admin-new-item-name').value || '').trim();
+const category = document.getElementById('admin-new-item-cat').value || 'games';
+const targetLabel = (document.getElementById('admin-new-item-id-label').value || '').trim() || 'الآيدي / رقم الحساب';
+const pkgTitle = (document.getElementById('admin-new-item-pkg-title').value || '').trim();
+const pkgCostUsd = Number(document.getElementById('admin-new-item-cost-usd').value) || 0;
+
+if (!name) {
+showToast('أدخل اسم اللعبة أو الخدمة', 'error');
+return;
+}
+if (!pkgTitle) {
+showToast('أدخل اسم الباقة الأولى', 'error');
+return;
+}
+if (!pkgCostUsd || pkgCostUsd <= 0) {
+showToast('أدخل تكلفة صحيحة بالدولار ($)', 'error');
+return;
+}
+
+const newItem = {
+id: 'item-' + Date.now() + '-' + Math.floor(Math.random() * 1000),
+name,
+category,
+badge: category === 'mobile' ? 'رصيد سوريا' : (category === 'cards' ? 'بطاقات رقمية' : 'شحن فوري'),
+accountNameLabel: category === 'mobile' ? 'اسم الحساب / صاحب الخط (اختياري)' : 'الاسم داخل اللعبة / اسم الحساب',
+accountNamePlaceholder: 'أدخل الاسم داخل اللعبة أو الحساب',
+targetLabel,
+targetPlaceholder: `أدخل ${targetLabel}`,
+artworkType: 'custom',
+customImage: pendingNewItemImage || '',
+isMobileTopup: category === 'mobile',
+packages: [
+{ id: 'pkg-' + Date.now(), name: pkgTitle, unit: pkgTitle, costUsd: Number(pkgCostUsd.toFixed(4)) }
+]
+};
+
+appState.items.unshift(newItem);
+saveAppState();
+
+pendingNewItemImage = '';
+document.getElementById('admin-new-item-name').value = '';
+document.getElementById('admin-new-item-id-label').value = '';
+document.getElementById('admin-new-item-pkg-title').value = '';
+document.getElementById('admin-new-item-cost-usd').value = '';
+document.getElementById('admin-new-item-img-file').value = '';
+document.getElementById('admin-new-item-img-name').textContent = 'SVG تلقائي';
+
+populateAdminPackageSelect();
+renderItemsGrid();
+renderAdminItemsManager();
+showToast(`تمت إضافة "${name}"`, 'success');
+}
+
+function renderAdminItemsManager() {
+const grid = document.getElementById('admin-items-manager-grid');
+if (!grid) return;
+
+grid.innerHTML = appState.items.map(item => `
+<div class="bg-navy-950/90 border border-slate-800 rounded-2xl p-4 space-y-3">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded-xl overflow-hidden border border-slate-700 shrink-0">
+${renderItemArtworkHtml(item)}
+</div>
+<div class="min-w-0">
+<h4 class="text-sm font-black text-white truncate">${escapeHtml(item.name)}</h4>
+<p class="text-[11px] text-slate-400">${item.packages.length} باقات</p>
+</div>
+</div>
+<button type="button" data-action="delete-item" data-item-id="${escapeHtml(item.id)}"
+class="px-2.5 py-1.5 rounded-lg bg-rose-500/15 hover:bg-rose-500 text-rose-300 hover:text-white border border-rose-500/30 text-[11px] font-bold transition-colors cursor-pointer shrink-0">
+حذف العنصر
+</button>
+</div>
+
+<div class="space-y-1.5 max-h-40 overflow-y-auto">
+${item.packages.length === 0
+? `<div class="text-xs text-slate-500 bg-navy-900/60 rounded-xl px-3 py-2 text-center">لا توجد باقات حالياً</div>`
+: item.packages.map(pkg => {
+const pr = calculatePackagePricing(pkg);
+return `
+<div class="flex items-center justify-between gap-2 bg-navy-900/90 border border-slate-800/80 rounded-xl px-3 py-2 text-xs">
+<div class="truncate">
+<span class="font-bold text-white">${escapeHtml(pkg.name)}</span>
+<span class="text-emerald-400 font-bold mr-1">(${pr.sellSyp.toLocaleString('en-US')} ل.س • ربح ${pr.profitSyp.toLocaleString('en-US')} ل.س)</span>
+</div>
+<button type="button" data-action="delete-pkg" data-item-id="${escapeHtml(item.id)}" data-pkg-id="${escapeHtml(pkg.id)}"
+class="px-2 py-1 rounded-lg bg-rose-500/15 hover:bg-rose-500 text-rose-300 hover:text-white text-[11px] font-bold transition-colors cursor-pointer shrink-0">
+إزالة العرض
+</button>
+</div>
+`;
+}).join('')
+}
+</div>
+</div>
+`).join('');
+}
+
+function renderAdminProfitStats() {
+const grid = document.getElementById('admin-stats-grid');
+if (!grid) return;
+
+const confirmed = appState.orders.filter(o => o.status === 'confirmed');
+const pending = appState.orders.filter(o => o.status === 'pending');
+const netSyp = confirmed.reduce((s, o) => s + (Number(o.profitSyp) || 0), 0);
+const netUsd = confirmed.reduce((s, o) => s + (Number(o.profitUsd) || 0), 0);
+const salesSyp = confirmed.reduce((s, o) => s + (Number(o.sellSyp) || 0), 0);
+
+grid.innerHTML = `
+<div class="glass-card rounded-2xl p-4 border border-emerald-500/30">
+<span class="text-xs text-slate-400 font-bold">صافي الربح المؤكد</span>
+<div class="text-xl font-black text-emerald-400 mt-1">${netSyp.toLocaleString('en-US')} ل.س</div>
+<span class="text-xs font-mono text-slate-400">$${netUsd.toFixed(2)}</span>
+</div>
+<div class="glass-card rounded-2xl p-4 border border-gold-500/30">
+<span class="text-xs text-slate-400 font-bold">إجمالي المبيعات المؤكدة</span>
+<div class="text-xl font-black text-gold-400 mt-1">${salesSyp.toLocaleString('en-US')} ل.س</div>
+<span class="text-xs text-slate-400">${confirmed.length} طلب مؤكد</span>
+</div>
+<div class="glass-card rounded-2xl p-4 border border-neon-500/30">
+<span class="text-xs text-slate-400 font-bold">طلبات قيد المراجعة</span>
+<div class="text-xl font-black text-neon-400 mt-1">${pending.length}</div>
+<span class="text-xs text-slate-400">من أصل ${appState.orders.length} طلب</span>
+</div>
+<div class="glass-card rounded-2xl p-4 border border-slate-700">
+<span class="text-xs text-slate-400 font-bold">سعر الصرف والربح</span>
+<div class="text-lg font-mono font-black text-white mt-1">${Number(appState.settings.exchangeRateSyp).toLocaleString('en-US')} ل.س</div>
+<span class="text-xs text-emerald-400 font-bold">${appState.settings.profitPercent}% + $${Number(appState.settings.fixedProfitUsd).toFixed(2)}</span>
+</div>
+`;
+}
+
+function renderAdminOrdersTable() {
+const tbody = document.getElementById('admin-orders-tbody');
+if (!tbody) return;
+
+if (appState.orders.length === 0) {
+tbody.innerHTML = `<tr><td colspan="7" class="py-8 text-center text-slate-400 text-xs sm:text-sm">لا توجد طلبات واردة حالياً</td></tr>`;
+return;
+}
+
+tbody.innerHTML = appState.orders.map(ord => `
+<tr class="hover:bg-navy-900/50 transition-colors">
+<td class="py-3 px-3 font-mono font-bold text-neon-400 whitespace-nowrap">${escapeHtml(ord.id)}</td>
+<td class="py-3 px-3">
+<div class="font-bold text-white">${escapeHtml(ord.itemName)}</div>
+<div class="text-xs text-slate-400">${escapeHtml(ord.packageName)}</div>
+</td>
+<td class="py-3 px-3 text-xs">
+<div class="font-bold text-gold-300">الاسم: ${escapeHtml(ord.accountName || 'غير محدد')}</div>
+<div class="font-mono text-slate-300">الآيدي: ${escapeHtml(ord.targetValue)}</div>
+</td>
+<td class="py-3 px-3 text-xs">
+<div class="font-mono text-slate-200">${escapeHtml(ord.txRef)}</div>
+<div class="text-[11px] font-bold ${ord.autoTopupRequested ? 'text-neon-400' : 'text-slate-400'}">${ord.autoTopupRequested ? 'شحن تلقائي' : 'يدوي'}</div>
+</td>
+<td class="py-3 px-3 whitespace-nowrap">
+<div class="font-bold text-gold-400">${Number(ord.sellSyp).toLocaleString('en-US')} ل.س</div>
+<div class="text-xs text-emerald-400 font-bold">ربح: ${Number(ord.profitSyp).toLocaleString('en-US')} ل.س</div>
+</td>
+<td class="py-3 px-3 whitespace-nowrap">${renderStatusPill(ord.status)}</td>
+<td class="py-3 px-3 whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<button type="button" data-action="set-order-status" data-order-id="${escapeHtml(ord.id)}" data-status="confirmed"
+class="px-2.5 py-1 rounded-lg bg-emerald-500/15 hover:bg-emerald-500 text-emerald-300 hover:text-navy-950 text-xs font-black transition-colors cursor-pointer">
+تأكيد
+</button>
+<button type="button" data-action="set-order-status" data-order-id="${escapeHtml(ord.id)}" data-status="rejected"
+class="px-2.5 py-1 rounded-lg bg-amber-500/15 hover:bg-amber-500 text-amber-300 hover:text-navy-950 text-xs font-bold transition-colors cursor-pointer">
+رفض
+</button>
+<button type="button" data-action="delete-order" data-order-id="${escapeHtml(ord.id)}"
+class="px-2 py-1 rounded-lg bg-rose-500/15 hover:bg-rose-500 text-rose-300 hover:text-white text-xs font-bold transition-colors cursor-pointer">
+حذف
+</button>
+</div>
+</td>
+</tr>
+`).join('');
+}
+
+function renderAdminAutoTopupSection() {
+const auto = appState.settings.autoTopup || {};
+const toggle = document.getElementById('admin-auto-enabled-toggle');
+const endpointInput = document.getElementById('admin-auto-endpoint-input');
+const tokenInput = document.getElementById('admin-auto-token-input');
+const triggerSelect = document.getElementById('admin-auto-trigger-select');
+const fallbackSelect = document.getElementById('admin-auto-fallback-select');
+const badge = document.getElementById('admin-auto-status-badge');
+
+if (toggle) toggle.checked = Boolean(auto.enabled);
+if (endpointInput) endpointInput.value = auto.endpointUrl || '';
+if (tokenInput) tokenInput.value = auto.apiToken || '';
+if (triggerSelect) triggerSelect.value = auto.triggerMode || 'on_confirm';
+if (fallbackSelect) fallbackSelect.value = auto.fallbackMode || 'queue_manual';
+
+if (badge) {
+if (auto.enabled) {
+badge.textContent = auto.endpointUrl ? 'مفعّل مع بوابة' : 'مفعّل (وضع يدوي/محلي)';
+badge.className = 'text-[11px] font-black px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30';
+} else {
+badge.textContent = 'معطّل';
+badge.className = 'text-[11px] font-black px-3 py-1 rounded-full bg-slate-800 text-slate-300';
+}
+}
+renderAdminAutoTopupLogs();
+}
+
+function saveAutoTopupSettings() {
+const enabled = Boolean(document.getElementById('admin-auto-enabled-toggle').checked);
+const endpointUrl = (document.getElementById('admin-auto-endpoint-input').value || '').trim();
+const apiToken = (document.getElementById('admin-auto-token-input').value || '').trim();
+const triggerMode = document.getElementById('admin-auto-trigger-select').value === 'on_create' ? 'on_create' : 'on_confirm';
+const fallbackMode = document.getElementById('admin-auto-fallback-select').value === 'simulate_ready' ? 'simulate_ready' : 'queue_manual';
+
+appState.settings.autoTopup = { enabled, endpointUrl, apiToken, triggerMode, fallbackMode };
+saveAppState();
+updateStoreAutoTopupBanner();
+renderAdminAutoTopupSection();
+showToast('تم حفظ إعدادات الشحن التلقائي', 'success');
+}
+
+function dispatchAutoTopupOrder(order, reasonText) {
+const auto = appState.settings.autoTopup || {};
+if (!Array.isArray(appState.autoTopupLogs)) appState.autoTopupLogs = [];
+
+const hasEndpoint = Boolean(auto.endpointUrl && /^https?:\/\//i.test(auto.endpointUrl));
+let statusLabel = 'قائمة التنفيذ اليدوي (ميداس باي / الموزع)';
+let detailText = `الاسم: ${order.accountName || 'غير محدد'} | الآيدي: ${order.targetValue} | السبب: ${reasonText || 'تحديث طلب'}`;
+
+if (hasEndpoint) {
+statusLabel = 'تم إرسال أمر البوابة';
+detailText = `إلى ${auto.endpointUrl} | الاسم: ${order.accountName || 'غير محدد'} | الآيدي: ${order.targetValue}`;
+try {
+fetch(auto.endpointUrl, {
+method: 'POST',
+headers: Object.assign(
+{ 'Content-Type': 'application/json' },
+auto.apiToken ? { 'Authorization': `Bearer ${auto.apiToken}` } : {}
+),
+body: JSON.stringify({
+orderId: order.id,
+itemName: order.itemName,
+packageName: order.packageName,
+accountName: order.accountName,
+targetValue: order.targetValue,
+txRef: order.txRef,
+costUsd: order.costUsd
+})
+}).catch(() => {});
+} catch (e) {}
+} else if (auto.fallbackMode === 'simulate_ready') {
+statusLabel = 'جاهز (سجل بدون بوابة)';
+}
+
+appState.autoTopupLogs.unshift({
+id: 'LOG-' + Math.floor(1000 + Math.random() * 9000),
+orderId: order.id,
+statusLabel,
+detailText,
+time: new Date().toLocaleTimeString('ar-SY', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+});
+if (appState.autoTopupLogs.length > 40) {
+appState.autoTopupLogs = appState.autoTopupLogs.slice(0, 40);
+}
+}
+
+function renderAdminAutoTopupLogs() {
+const list = document.getElementById('admin-auto-logs-list');
+if (!list) return;
+const logs = Array.isArray(appState.autoTopupLogs) ? appState.autoTopupLogs : [];
+if (logs.length === 0) {
+list.innerHTML = `<div class="text-center py-8 text-slate-400">لا توجد أوامر مسجلة في سجل الشحن التلقائي بعد.</div>`;
+return;
+}
+list.innerHTML = logs.map(l => `
+<div class="bg-navy-900/90 border border-slate-800 rounded-2xl p-3 space-y-1">
+<div class="flex items-center justify-between gap-2">
+<span class="font-mono font-bold text-neon-400">${escapeHtml(l.orderId)}</span>
+<span class="text-[11px] font-bold text-emerald-400">${escapeHtml(l.statusLabel)}</span>
+</div>
+<p class="text-slate-300 leading-relaxed">${escapeHtml(l.detailText)}</p>
+<span class="block text-[10px] text-slate-500">${escapeHtml(l.time)}</span>
+</div>
+`).join('');
+}
+
+function testAutoTopupDispatch() {
+const sampleOrder = appState.orders[0] || {
+id: 'SH-TEST',
+itemName: 'ببجي موبايل (PUBG UC)',
+packageName: '60 شدة UC',
+accountName: 'TestPlayer',
+targetValue: '5123456789',
+txRef: 'TX-TEST',
+costUsd: 0.90
+};
+dispatchAutoTopupOrder(sampleOrder, 'اختبار يدوي من الإدارة');
+saveAppState();
+renderAdminAutoTopupLogs();
+showToast('تم تسجيل أمر اختبار في سجل الشحن التلقائي', 'success');
+}
+
+function clearAutoTopupLogs() {
+appState.autoTopupLogs = [];
+saveAppState();
+renderAdminAutoTopupLogs();
+showToast('تم مسح سجل الشحن التلقائي', 'info');
+}
+
+function changeAdminPin() {
+const curInput = document.getElementById('admin-current-pin-input');
+const newInput = document.getElementById('admin-new-pin-input');
+const confInput = document.getElementById('admin-confirm-pin-input');
+
+const curVal = (curInput ? curInput.value : '').trim();
+const newVal = (newInput ? newInput.value : '').trim();
+const confVal = (confInput ? confInput.value : '').trim();
+const activePin = String(appState.settings.adminPin || DEFAULT_PIN);
+
+if (curVal !== activePin) {
+showToast('الرمز الحالي غير صحيح', 'error');
+if (curInput) curInput.focus();
+return;
+}
+if (newVal.length < 4) {
+showToast('يجب أن يكون الرمز الجديد 4 خانات فأكثر', 'error');
+if (newInput) newInput.focus();
+return;
+}
+if (newVal !== confVal) {
+showToast('تأكيد الرمز الجديد غير متطابق', 'error');
+if (confInput) confInput.focus();
+return;
+}
+
+appState.settings.adminPin = newVal;
+saveAppState();
+if (curInput) curInput.value = '';
+if (newInput) newInput.value = '';
+if (confInput) confInput.value = '';
+showToast('تم تحديث كلمة السر / رمز الإدارة فوراً', 'success');
+}
+
+function saveSupportSettings() {
+const whatsapp = (document.getElementById('admin-support-whatsapp').value || '').trim().replace(/[^0-9]/g, '');
+const telegram = (document.getElementById('admin-support-telegram').value || '').trim().replace(/^@+/, '');
+const phone = (document.getElementById('admin-support-phone').value || '').trim();
+const email = (document.getElementById('admin-support-email').value || '').trim();
+const hours = (document.getElementById('admin-support-hours').value || '').trim();
+const welcomeMessage = (document.getElementById('admin-support-welcome').value || '').trim();
+
+appState.settings.support = {
+whatsapp: whatsapp || '963998877665',
+telegram: telegram || 'shamstore_support',
+phone: phone || '0998877665',
+email: email || 'support@shamstore.sy',
+hours: hours || 'يومياً من 9:00 صباحاً حتى 12:00 منتصف الليل',
+welcomeMessage: welcomeMessage || 'أهلاً بك في الدعم الفني لمتجر شام ستور.'
+};
+
+saveAppState();
+showToast('تم حفظ إعدادات الدعم الفني', 'success');
+}
+
+/* =====================================================================
+توليد الأحداث المركزية وتفويض النقرات
+===================================================================== */
+function bindEvents() {
+document.addEventListener('click', function (event) {
+const actionEl = event.target.closest('[data-action]');
+if (actionEl) {
+const action = actionEl.dataset.action;
+
+if (action === 'logo-tap') {
+logoTapCount += 1;
+if (logoTapTimer) clearTimeout(logoTapTimer);
+if (logoTapCount >= 5) {
+logoTapCount = 0;
+openPinModal();
+} else {
+logoTapTimer = setTimeout(() => { logoTapCount = 0; }, 1800);
+}
+return;
+}
+if (action === 'open-uc-guide') { openUcGuideModal(); return; }
+if (action === 'open-install-modal') { openInstallModal(); return; }
+if (action === 'close-install-modal') { closeInstallModal(); return; }
+if (action === 'trigger-native-install') { triggerNativeInstallPrompt(); return; }
+if (action === 'close-uc-guide') { closeUcGuideModal(); return; }
+if (action === 'quick-open-pubg') {
+closeUcGuideModal();
+const pubg = appState.items.find(i => i.id === 'pubg-mobile') || appState.items[0];
+if (pubg) openTopupModal(pubg.id);
+return;
+}
+if (action === 'quick-open-auto-item') {
+const targetItem = appState.items.find(i => i.id === 'pubg-mobile') || appState.items[0];
+if (targetItem) openTopupModal(targetItem.id);
+return;
+}
+if (action === 'open-support') { openSupportModal(); return; }
+if (action === 'close-support-modal') { closeSupportModal(); return; }
+if (action === 'copy-support-whatsapp') {
+copyTextSafely(appState.settings.support && appState.settings.support.whatsapp, 'تم نسخ رقم واتساب الدعم');
+return;
+}
+if (action === 'copy-support-telegram') {
+copyTextSafely(appState.settings.support && appState.settings.support.telegram, 'تم نسخ معرّف تيليغرام الدعم');
+return;
+}
+if (action === 'copy-support-phone') {
+copyTextSafely(appState.settings.support && appState.settings.support.phone, 'تم نسخ رقم الهاتف');
+return;
+}
+if (action === 'copy-support-email') {
+copyTextSafely(appState.settings.support && appState.settings.support.email, 'تم نسخ البريد الإلكتروني');
+return;
+}
+if (action === 'copy-gsc-slot') {
+copyTextSafely('GOOGLE_SEARCH_CONSOLE_VERIFICATION_SLOT', 'تم نسخ علامة مكان التحقق في <head>');
+return;
+}
+if (action === 'copy-gsc-meta') {
+copyTextSafely('<meta name="google-site-verification" content="YOUR_CODE_HERE" />', 'تم نسخ وسم التحقق النموذجي');
+return;
+}
+if (action === 'toggle-currency') {
+appState.settings.currency = appState.settings.currency === 'SYP' ? 'USD' : 'SYP';
+saveAppState();
+updateCurrencyUi();
+renderItemsGrid();
+if (activeModalItemId) renderModalPackages();
+return;
+}
+if (action === 'open-orders') { openOrdersModal(); return; }
+if (action === 'close-orders-modal') { closeOrdersModal(); return; }
+if (action === 'open-pin-modal') { openPinModal(); return; }
+if (action === 'close-pin-modal') { closePinModal(); return; }
+if (action === 'verify-pin') { verifyAdminPin(); return; }
+if (action === 'close-admin-modal') { closeAdminModal(); return; }
+if (action === 'open-item-topup') { openTopupModal(actionEl.dataset.itemId); return; }
+if (action === 'close-topup-modal') { closeTopupModal(); return; }
+if (action === 'select-pkg') {
+customMobileCostUsd = null;
+const cInput = document.getElementById('modal-custom-usd-input');
+if (cInput) cInput.value = '';
+selectedPackageId = actionEl.dataset.pkgId;
+renderModalPackages();
+return;
+}
+if (action === 'copy-wallet') {
+copyTextSafely(appState.settings.shamCashWallet, 'تم نسخ رقم محفظة شام كاش');
+return;
+}
+if (action === 'submit-order') { submitTopupOrder(); return; }
+if (action === 'close-receipt-modal') { closeReceiptModal(); return; }
+if (action === 'view-receipt') {
+const ord = appState.orders.find(o => o.id === actionEl.dataset.orderId);
+if (ord) {
+closeOrdersModal();
+openReceiptModal(ord);
+}
+return;
+}
+if (action === 'open-orders-from-receipt') {
+closeReceiptModal();
+openOrdersModal();
+return;
+}
+if (action === 'copy-receipt-summary') {
+if (lastReceiptOrder) {
+const r = lastReceiptOrder;
+const summary = `طلب: ${r.id} | ${r.itemName} - ${r.packageName} | الاسم: ${r.accountName || 'غير محدد'} | الآيدي: ${r.targetValue} | التحويل: ${r.txRef} | المبلغ: ${Number(r.sellSyp).toLocaleString('en-US')} ل.س`;
+copyTextSafely(summary, 'تم نسخ تفاصيل الإيصال');
+}
+return;
+}
+if (action === 'adjust-rate') {
+const delta = Number(actionEl.dataset.delta) || 0;
+const rateInput = document.getElementById('admin-rate-input');
+const cur = Math.max(1, Number(rateInput.value) || Number(appState.settings.exchangeRateSyp) || 15000);
+rateInput.value = Math.max(1, Math.round(cur + delta));
+previewAdminSettings();
+return;
+}
+if (action === 'save-pricing-settings') { savePricingSettings(); return; }
+if (action === 'trigger-qr-upload') {
+const fInput = document.getElementById('admin-qr-file-input');
+if (fInput) { fInput.value = ''; fInput.click(); }
+return;
+}
+if (action === 'paste-qr-clipboard') { handlePasteQrButton(); return; }
+if (action === 'apply-qr-url') {
+const uInput = document.getElementById('admin-qr-url-input');
+const urlVal = (uInput ? uInput.value : '').trim();
+if (!urlVal) {
+showToast('أدخل رابط صورة الباركود أولاً', 'error');
+return;
+}
+if (!urlVal.startsWith('http://') && !urlVal.startsWith('https://') && !urlVal.startsWith('data:image/')) {
+showToast('الرابط يجب أن يبدأ بـ https:// أو http://', 'error');
+return;
+}
+normalizeAndSaveQrImage(urlVal, 'تم تطبيق وحفظ رابط الباركود');
+return;
+}
+if (action === 'clear-qr-image') {
+appState.settings.merchantQrImage = '';
+const uInput = document.getElementById('admin-qr-url-input');
+if (uInput) uInput.value = '';
+saveAppState();
+renderAdminQrSection();
+syncAllQrPreviews();
+showToast('تمت إزالة صورة الباركود', 'info');
+return;
+}
+if (action === 'add-package') { addAdminPackage(); return; }
+if (action === 'delete-pkg') { deletePackageOffer(actionEl.dataset.itemId, actionEl.dataset.pkgId); return; }
+if (action === 'delete-item') { deleteStoreItem(actionEl.dataset.itemId); return; }
+if (action === 'trigger-new-item-img') {
+const imgFile = document.getElementById('admin-new-item-img-file');
+if (imgFile) { imgFile.value = ''; imgFile.click(); }
+return;
+}
+if (action === 'add-new-item') { addNewStoreItem(); return; }
+if (action === 'save-auto-topup') { saveAutoTopupSettings(); return; }
+if (action === 'test-auto-topup') { testAutoTopupDispatch(); return; }
+if (action === 'clear-auto-logs') { clearAutoTopupLogs(); return; }
+if (action === 'set-order-status') {
+const ord = appState.orders.find(o => o.id === actionEl.dataset.orderId);
+if (ord) {
+ord.status = actionEl.dataset.status;
+if (ord.status === 'confirmed' && appState.settings.autoTopup && appState.settings.autoTopup.enabled) {
+dispatchAutoTopupOrder(ord, 'تأكيد الطلب');
+renderAdminAutoTopupLogs();
+}
+saveAppState();
+renderAdminProfitStats();
+renderAdminOrdersTable();
+renderCustomerOrdersList();
+showToast(ord.status === 'confirmed' ? `تم تأكيد الطلب ${ord.id}` : `تم رفض الطلب ${ord.id}`, 'info');
+}
+return;
+}
+if (action === 'delete-order') {
+const ordId = actionEl.dataset.orderId;
+openConfirmDialog('حذف الطلب', `هل تريد حذف الطلب ${ordId} نهائياً؟`, function () {
+appState.orders = appState.orders.filter(o => o.id !== ordId);
+saveAppState();
+updateOrdersBadge();
+renderAdminProfitStats();
+renderAdminOrdersTable();
+renderCustomerOrdersList();
+showToast(`تم حذف الطلب ${ordId}`, 'info');
+});
+return;
+}
+if (action === 'change-pin') { changeAdminPin(); return; }
+if (action === 'save-support-settings') { saveSupportSettings(); return; }
+if (action === 'reset-defaults') {
+openConfirmDialog(
+'إعادة الضبط الافتراضي',
+'هل تريد إعادة الأسعار والباقات والإعدادات إلى الوضع الافتراضي؟',
+function () {
+appState = createDefaultState();
+saveAppState();
+activeCategory = 'all';
+document.querySelectorAll('.cat-btn').forEach(b => {
+const isAll = b.dataset.category === 'all';
+b.className = isAll
+? 'cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-gold-500 text-navy-950 shadow-md shadow-gold-500/20'
+: 'cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800';
+});
+updateCurrencyUi();
+updateStoreAutoTopupBanner();
+updateOrdersBadge();
+renderItemsGrid();
+openAdminModal();
+showToast('تمت إعادة الضبط الافتراضي', 'info');
+}
+);
+return;
+}
+}
+
+const catBtn = event.target.closest('.cat-btn');
+if (catBtn && catBtn.dataset.category) {
+activeCategory = catBtn.dataset.category;
+document.querySelectorAll('.cat-btn').forEach(btn => {
+const active = btn.dataset.category === activeCategory;
+btn.className = active
+? 'cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-gold-500 text-navy-950 shadow-md shadow-gold-500/20'
+: 'cat-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black whitespace-nowrap transition-all cursor-pointer bg-navy-900 text-slate-300 hover:bg-navy-800 border border-slate-800';
+});
+renderItemsGrid();
+return;
+}
+
+const adminTabBtn = event.target.closest('.admin-tab-btn');
+if (adminTabBtn && adminTabBtn.dataset.adminTab) {
+setActiveAdminTab(adminTabBtn.dataset.adminTab);
+}
+});
+
+document.getElementById('confirm-cancel-btn').addEventListener('click', closeConfirmDialog);
+document.getElementById('confirm-accept-btn').addEventListener('click', function () {
+const cb = confirmCallback;
+closeConfirmDialog();
+if (cb) cb();
+});
+
+document.getElementById('store-search-input').addEventListener('input', renderItemsGrid);
+document.getElementById('modal-custom-usd-input').addEventListener('input', function () {
+const v = Number(this.value);
+customMobileCostUsd = v > 0 ? v : null;
+renderModalPackages();
+});
+
+document.getElementById('admin-rate-input').addEventListener('input', previewAdminSettings);
+document.getElementById('admin-profit-pct-input').addEventListener('input', previewAdminSettings);
+document.getElementById('admin-fixed-profit-input').addEventListener('input', previewAdminSettings);
+
+['admin-pkg-item-select', 'admin-pkg-title-input', 'admin-pkg-unit-input', 'admin-pkg-cost-usd-input', 'admin-pkg-custom-profit-input', 'admin-pkg-override-usd-input'].forEach(id => {
+const el = document.getElementById(id);
+if (el) el.addEventListener('input', updateAdminPackagePreview);
+});
+
+document.getElementById('admin-qr-file-input').addEventListener('change', function (ev) {
+const file = ev.target && ev.target.files ? ev.target.files[0] : null;
+if (file) processQrFile(file);
+ev.target.value = '';
+});
+
+const dz = document.getElementById('admin-qr-dropzone');
+dz.addEventListener('dragover', function (ev) {
+ev.preventDefault();
+dz.classList.add('border-gold-500', 'bg-gold-500/10');
+});
+dz.addEventListener('dragleave', function (ev) {
+ev.preventDefault();
+dz.classList.remove('border-gold-500', 'bg-gold-500/10');
+});
+dz.addEventListener('drop', function (ev) {
+ev.preventDefault();
+dz.classList.remove('border-gold-500', 'bg-gold-500/10');
+const file = extractImageFromClipboard(ev.dataTransfer);
+if (file) {
+processQrFile(file);
+return;
+}
+const url = (ev.dataTransfer && ev.dataTransfer.getData('text/plain') || '').trim();
+if (url && (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('data:image/'))) {
+normalizeAndSaveQrImage(url, 'تم حفظ صورة الباركود المسحوبة');
+} else {
+showToast('يرجى سحب ملف صورة صالح للباركود', 'error');
+}
+});
+
+document.getElementById('admin-new-item-img-file').addEventListener('change', function (ev) {
+const file = ev.target && ev.target.files ? ev.target.files[0] : null;
+const nameEl = document.getElementById('admin-new-item-img-name');
+if (!file) {
+pendingNewItemImage = '';
+if (nameEl) nameEl.textContent = 'SVG تلقائي';
+return;
+}
+const reader = new FileReader();
+reader.onload = function (e) {
+pendingNewItemImage = e.target && e.target.result ? String(e.target.result) : '';
+if (nameEl) nameEl.textContent = file.name;
+};
+reader.readAsDataURL(file);
+});
+
+document.getElementById('admin-pin-input').addEventListener('keydown', function (ev) {
+if (ev.key === 'Enter') {
+ev.preventDefault();
+verifyAdminPin();
+}
+});
+
+document.addEventListener('paste', function (ev) {
+const adminModal = document.getElementById('admin-modal');
+if (!adminModal || adminModal.classList.contains('hidden')) return;
+const activeTag = document.activeElement ? document.activeElement.tagName.toLowerCase() : '';
+if (activeTag === 'input' || activeTag === 'textarea') {
+const imgFile = extractImageFromClipboard(ev.clipboardData);
+if (!imgFile) return;
+}
+handleQrPasteEvent(ev);
+});
+
+document.addEventListener('keydown', function (ev) {
+if (ev.ctrlKey && ev.shiftKey && (ev.key === 'A' || ev.key === 'a')) {
+ev.preventDefault();
+openPinModal();
+return;
+}
+if (ev.key === 'Escape') {
+closeConfirmDialog();
+closeInstallModal();
+closeReceiptModal();
+closeTopupModal();
+closeOrdersModal();
+closeUcGuideModal();
+closeSupportModal();
+closePinModal();
+}
+});
+
+window.addEventListener('beforeinstallprompt', function (ev) {
+ev.preventDefault();
+deferredInstallPrompt = ev;
+updateInstallUiState();
+});
+
+window.addEventListener('appinstalled', function () {
+deferredInstallPrompt = null;
+updateInstallUiState();
+closeInstallModal();
+showToast('تم تثبيت تطبيق شام ستور على جهازك', 'success');
+});
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+setupPwaManifestAndIcons();
+registerPwaServiceWorker();
+updateInstallUiState();
+bindEvents();
+updateCurrencyUi();
+updateStoreAutoTopupBanner();
+updateOrdersBadge();
+renderItemsGrid();
+});
+})();
+</script>
+</body>
+</html>
